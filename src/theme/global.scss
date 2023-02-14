@@ -1,0 +1,32 @@
+@import "scss-reset/_reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+.wrapper {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  max-width: 100%;
+  background: black;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+.mainContainer {
+  padding-left: 7.6%;
+  padding-right: 7.6%;
+}
+span {
+  color: #800000;
+}
+.contactButtonBlock {
+  position: fixed;
+  top: 35%;
+  left: 0px;
+}

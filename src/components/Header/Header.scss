@@ -1,0 +1,53 @@
+@import "../../index.scss";
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(34, 3, 5);
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    width: 30%;
+  }
+  &__nav {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  &__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  &__text {
+    margin-left: 30px;
+    @include font-size(700, 26px, 31px);
+    color: $white;
+  }
+  &__text2 {
+    color: grey;
+  }
+}
+.headerNavs {
+  width: 100%;
+  text-align: right;
+}
+.headerNav {
+  text-align: right;
+  cursor: pointer;
+  margin-right: 3%;
+  @include font-size(700, 20px, 24px);
+  color: white;
+}
+.headerNavActive {
+  color: #800000;
+}
