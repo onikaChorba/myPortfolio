@@ -1,0 +1,27 @@
+@import "../../../../index.scss";
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  color: white;
+  &__title1 {
+    text-transform: uppercase;
+    @include font-size(700, 44px, 50px);
+    padding-top: 40%;
+    padding-bottom: 2%;
+  }
+  &__title2 {
+    color: white;
+    @include font-size(600, 34px, 40px);
+    padding-bottom: 5%;
+  }
+  &__text {
+    text-align: center;
+    width: 70%;
+    color: #cccc;
+    @include font-size(400, 24px, 36px);
+    padding-bottom: 20%;
+  }
+}
