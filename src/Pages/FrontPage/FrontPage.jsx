@@ -1,6 +1,7 @@
 import { ContactButton } from "../../components/ContactButton/ContactButton";
 import { About } from "./sections/About/About";
 import { Home } from "./sections/Home/Home";
+import { Projects } from "./sections/Projects/Projects";
 
 export const FrontPage = () => {
   return (
@@ -15,10 +16,7 @@ export const FrontPage = () => {
         <About />
       </div>
       <div id="Projects">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-        laborum, animi eveniet delectus illo at. Aliquid eaque iure at,
-        dignissimos perspiciatis blanditiis ipsum. Molestiae eum laboriosam
-        libero! Minus, quam reiciendis. Projects
+        <Projects />
       </div>
       <div id="Resume">
         Resume Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut

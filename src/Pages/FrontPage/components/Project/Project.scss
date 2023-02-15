@@ -1,0 +1,54 @@
+.project {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    margin: 0 auto;
+  }
+  &__tools {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10%;
+  }
+}
+
+.projectBlock {
+  cursor: pointer;
+  box-shadow: 10px 7px 23px -3px rgba(128, 0, 0, 1);
+  border: 2px solid #800000;
+  width: 48%;
+  min-height: 400px;
+  margin-bottom: 1%;
+  transform: translateY(0%);
+  margin: auto;
+  margin-bottom: 5%;
+  overflow: hidden;
+  &__img {
+    position: relative;
+    z-index: 10;
+  }
+  &__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(
+      184.38deg,
+      #060606 2%,
+      rgba(0, 0, 0, 0.02) 96.44%
+    );
+    transform: translateY(80%);
+    transition: all 1.5s ease;
+    &:hover {
+      transform: translateY(0%);
+    }
+  }
+}
