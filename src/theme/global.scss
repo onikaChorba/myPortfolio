@@ -30,3 +30,11 @@ span {
   top: 35%;
   left: 0px;
 }
+.text {
+  color: #cccc;
+  @include font-size(400, 24px, 36px);
+}
+.title2 {
+  color: white;
+  @include font-size(600, 34px, 40px);
+}
