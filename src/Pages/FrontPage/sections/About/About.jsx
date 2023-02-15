@@ -10,7 +10,7 @@ import react from "@/assets/img/react.png";
 import figma from "@/assets/img/figma.png";
 export const About = () => {
   return (
-    <section className="about">
+    <section className="about section">
       <h2 className="about__title title2">About me</h2>
       <p className="text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit optio

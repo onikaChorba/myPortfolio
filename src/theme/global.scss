@@ -35,6 +35,18 @@ span {
   @include font-size(400, 24px, 36px);
 }
 .title2 {
+  padding-top: 3%;
+  padding-bottom: 2%;
   color: white;
   @include font-size(600, 34px, 40px);
+}
+.title3 {
+  margin: 0 auto;
+  color: white;
+  @include font-size(600, 24px, 30px);
+}
+.section {
+  width: 95%;
+  padding-top: 5%;
+  padding-left: 10%;
 }
