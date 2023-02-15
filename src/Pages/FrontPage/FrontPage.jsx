@@ -1,4 +1,5 @@
 import { ContactButton } from "../../components/ContactButton/ContactButton";
+import { About } from "./sections/About/About";
 import { Home } from "./sections/Home/Home";
 
 export const FrontPage = () => {
@@ -11,10 +12,7 @@ export const FrontPage = () => {
         <Home />
       </div>
       <div id="About">
-        About Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-        esse eligendi, modi tenetur sunt quo voluptatem obcaecati harum totam
-        sit aliquam? Quod cupiditate consequatur ad similique id soluta libero
-        possimus.
+        <About />
       </div>
       <div id="Projects">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus

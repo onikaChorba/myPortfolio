@@ -1,0 +1,20 @@
+.about {
+  width: 95%;
+  padding-top: 5%;
+  padding-left: 10%;
+  &__title {
+    padding-top: 3%;
+    padding-bottom: 2%;
+  }
+  &__text {
+    margin-left: 20%;
+  }
+  &__icon {
+    padding-bottom: 5%;
+  }
+}
+.iconSkills {
+  padding-top: 2%;
+  width: 70px;
+  margin-right: 30px;
+}
