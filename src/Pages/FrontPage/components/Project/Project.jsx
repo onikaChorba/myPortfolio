@@ -1,10 +1,9 @@
 import "./Project.scss";
 
 import arrow from "@/assets/img/arrow.png";
-import { data } from "../../../../FrontPageData";
-import { Button } from "../../../../components/Button/Button";
+import { data } from "@/FrontPageData";
+
 export const Project = () => {
-  //let names = ["html", "css", "scss", "javaScript"];
   return (
     <section className="project">
       {data.dataProject.map((project) => (
@@ -24,12 +23,7 @@ export const Project = () => {
               </button>
             </div>
             <div className="project__text text">{project.textShort}</div>
-            <div className="project__tools">
-              <Button text={project.textButton.text} />
-              {/* {data.textButton.map((name, index) => (
-                <Button key={index} text={name.text} />
-              ))} */}
-            </div>
+            <div className="project__tools">{project.textButton}</div>
           </div>
         </div>
       ))}

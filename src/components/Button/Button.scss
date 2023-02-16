@@ -1,7 +1,6 @@
 .button {
   margin: 10px;
   width: auto;
-  height: 66px;
   background: grey;
   border-radius: 10px;
   display: flex;
@@ -9,6 +8,6 @@
   align-items: center;
   &__text {
     color: white;
-    margin: 20px;
+    margin: 15px;
   }
 }
