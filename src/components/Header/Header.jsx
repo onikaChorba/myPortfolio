@@ -26,7 +26,7 @@ export const Header = () => {
               to={el.to}
               spy={true}
               smooth={true}
-              offset={70}
+              offset={-70}
               duration={500}
               key={index}
             >
