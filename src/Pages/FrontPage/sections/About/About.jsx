@@ -9,6 +9,17 @@ import ts from "@/assets/img/ts.png";
 import react from "@/assets/img/react.png";
 import figma from "@/assets/img/figma.png";
 export const About = () => {
+  const icon = [
+    { src: html, alt: "html" },
+    { src: css, alt: "css" },
+    { src: js, alt: "js" },
+    { src: scss, alt: "scss" },
+    { src: gitHub, alt: "gitHub" },
+    { src: wb, alt: "webpack" },
+    { src: ts, alt: "ts" },
+    { src: react, alt: "react" },
+    { src: figma, alt: "figma" },
+  ];
   return (
     <section className="about section">
       <h2 className="about__title title2">About me</h2>
@@ -20,20 +31,9 @@ export const About = () => {
       </p>
       <h2 className="about__title title2">My skills</h2>
       <div className="about__icon">
-        <img src={html} alt="html" className="iconSkills" />
-        <img src={css} alt="css" className="iconSkills" />
-        <img src={js} alt="js" className="iconSkills" />
-        <img src={scss} alt="js" className="iconSkills" />
-        <img src={gitHub} alt="js" className="iconSkills" />
-        <img
-          src={wb}
-          alt="js"
-          className="iconSkills"
-          style={{ width: "90px" }}
-        />
-        <img src={ts} alt="js" className="iconSkills" />
-        <img src={react} alt="js" className="iconSkills" />
-        <img src={figma} alt="js" className="iconSkills" />
+        {icon.map((el, index) => (
+          <img src={el.src} alt={el.alt} className="iconSkills" key={index} />
+        ))}
       </div>
     </section>
   );
