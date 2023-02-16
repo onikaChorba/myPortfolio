@@ -1,4 +1,4 @@
-import { ContactButton } from "../../components/ContactButton/ContactButton";
+import { ContactButton } from "@/components/ContactButton/ContactButton";
 import { About } from "./sections/About/About";
 import { Home } from "./sections/Home/Home";
 import { Projects } from "./sections/Projects/Projects";
