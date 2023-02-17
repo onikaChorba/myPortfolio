@@ -33,10 +33,12 @@ export const data = {
         </div>
       ),
       text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiores consequuntur fuga laboriosam aut accusamus debitis quibusdam vel rem. Quidem ea possimus dicta perspiciatis dolores officiis.",
+      gitLink: "https://github.com/onikaChorba/myPortfolio",
+      browserLink: "google.com",
     },
     {
       id: "2",
-      name: "Tutorify",
+      name: "tutorify",
       imgMain: imgReact1,
       textShort: 'Sites Built With ReactJS "Tytorify"',
       textButton: (
@@ -47,10 +49,12 @@ export const data = {
         </div>
       ),
       text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiore",
+      gitLink: "https://github.com/onikaChorba/tutorify",
+      browserLink: "https://onikachorba.github.io/tutorify/",
     },
     {
       id: "3",
-      name: "Community",
+      name: "community",
       imgMain: imgProject2,
       textShort: 'Sites Built With ReactJS "Tytorify"',
       textButton: (

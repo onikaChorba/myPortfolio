@@ -70,4 +70,17 @@
 }
 .projectButton {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10%;
+}
+.projectBlockInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2%;
+  &__title {
+    padding-top: 10%;
+    padding-bottom: 5%;
+  }
 }

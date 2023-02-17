@@ -1,11 +1,11 @@
 import { ProjectMain } from "../ProjectMain/ProjectMain";
 import { data } from "../../../../FrontPageData";
-// import ProjectMain from "../CardMain/CardMain";
-export const ProjectBlock = ({ project }) => {
+
+export const ProjectBlock = () => {
   return (
     <section className="projectBlocks">
-      {data.dataProject.map((project) => (
-        <ProjectMain project={project} />
+      {data.dataProject.map((project, index) => (
+        <ProjectMain project={project} key={index} />
       ))}
     </section>
   );
