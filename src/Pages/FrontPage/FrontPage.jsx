@@ -24,7 +24,7 @@ export const FrontPage = () => {
         dolores ab fuga, et necessitatibus mollitia blanditiis cum tenetur!
         Assumenda, laborum!
       </div>
-      <div id="Contact">
+      <div id="Contact" className="text">
         Contact Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Consectetur ipsa, veritatis magni reiciendis molestias maxime animi ad
         nemo dolor, eligendi cupiditate harum iste nisi incidunt? Itaque animi

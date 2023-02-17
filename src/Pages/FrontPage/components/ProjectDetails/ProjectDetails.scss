@@ -1,0 +1,33 @@
+.buttonLinkBlock {
+  display: flex;
+}
+.buttonLink {
+  background: rgb(34, 3, 5);
+  padding: 15px;
+  height: 66px;
+  border-radius: 10px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__text {
+    color: white;
+    margin-right: 20px;
+  }
+  &__icon {
+    width: 45px;
+  }
+}
+.projectDetails {
+  &__title {
+    margin: 2% auto;
+    text-align: center;
+  }
+  &__video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+  }
+}

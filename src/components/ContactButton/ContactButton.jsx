@@ -14,7 +14,7 @@ export const ContactButton = () => {
   return (
     <section className="contactButton">
       {contactButton.map((contact, index) => (
-        <a href={contact.href} key={index}>
+        <a href={contact.href} key={index} target="_blank" rel="noreferrer">
           <img src={contact.src} alt="gitHub" className="contactButton__icon" />
         </a>
       ))}

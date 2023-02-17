@@ -10,16 +10,17 @@ export const ProjectMain = ({ project }) => {
     setIsShowDetails((current) => !current);
   };
   return (
-    <section className="projectMain">
-      <div className="project">
-        <div
-          className="projectBlocks"
-          style={
-            isShowDetails
-              ? { display: "none" }
-              : { display: "flex", flexWrap: "wrap" }
-          }
-        >
+    <section className="projectMain project">
+      {isShowDetails ? (
+        <div className="projectDetails">
+          <ProjectDetails project={project} />
+          <button className="projectButton" onClick={handleClickShowDetails}>
+            <p className="text"> Less info </p>
+            <img src={arrow} alt="arrow" className="arrow" />
+          </button>
+        </div>
+      ) : (
+        <div className="projectBlocks">
           <div className="projectBlock">
             <div style={{ background: "black" }}>
               <img
@@ -39,18 +40,13 @@ export const ProjectMain = ({ project }) => {
               <span>{project.name}</span>
             </div>
             <div className="projectBlockInfo__text text">{project.text}</div>
-            <button className="projectButton " onClick={handleClickShowDetails}>
+            <button className="projectButton" onClick={handleClickShowDetails}>
               <p className="text">more info </p>
               <img src={arrow} alt="arrow" className="arrow" />
             </button>
           </div>
         </div>
-        {isShowDetails ? (
-          <div className="projectDetails">
-            <ProjectDetails />
-          </div>
-        ) : null}
-      </div>
+      )}
     </section>
   );
 };
