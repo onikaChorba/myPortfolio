@@ -1,8 +1,5 @@
 .project {
   padding-top: 5%;
-  padding-bottom: 5%;
-  display: flex;
-  flex-wrap: wrap;
   &__titleBlock {
     display: flex;
     justify-content: space-between;
@@ -24,7 +21,13 @@
   width: 25px;
   padding-left: 10px;
 }
-
+.projectBlocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projectBlockInfo {
+  width: 48%;
+}
 .projectBlock {
   cursor: pointer;
   box-shadow: 10px 7px 23px -3px rgba(128, 0, 0, 1);
@@ -64,4 +67,7 @@
       transform: translateY(0%);
     }
   }
+}
+.projectButton {
+  display: flex;
 }

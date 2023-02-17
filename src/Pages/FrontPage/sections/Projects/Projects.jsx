@@ -1,5 +1,5 @@
 import "./Projects.scss";
-import { Project } from "../../components/Project/Project";
+import { ProjectBlock } from "../../components/ProjectBlock/ProjectBlock";
 export const Projects = () => {
   return (
     <section className="projects section">
@@ -8,7 +8,7 @@ export const Projects = () => {
         Here you will find some of the personal and clients projects that I
         created with each project containing its own case study
       </p>
-      <Project />
+      <ProjectBlock />
     </section>
   );
 };

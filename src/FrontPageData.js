@@ -27,11 +27,12 @@ export const data = {
       textShort: 'Sites Built With ReactJS "Tytorify"',
       textButton: (
         <div className="project__tools">
-          {Object.keys(project1).map((obj) => (
-            <Button text={project1[obj].text}></Button>
+          {Object.keys(project1).map((obj, index) => (
+            <Button text={project1[obj].text} key={index}></Button>
           ))}
         </div>
       ),
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiores consequuntur fuga laboriosam aut accusamus debitis quibusdam vel rem. Quidem ea possimus dicta perspiciatis dolores officiis.",
     },
     {
       id: "2",
@@ -40,11 +41,12 @@ export const data = {
       textShort: 'Sites Built With ReactJS "Tytorify"',
       textButton: (
         <div className="project__tools">
-          {Object.keys(project1).map((obj) => (
-            <Button text={project1[obj].text}></Button>
+          {Object.keys(project1).map((obj, index) => (
+            <Button text={project1[obj].text} key={index}></Button>
           ))}
         </div>
       ),
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiore",
     },
     {
       id: "3",
@@ -53,11 +55,12 @@ export const data = {
       textShort: 'Sites Built With ReactJS "Tytorify"',
       textButton: (
         <div className="project__tools">
-          {Object.keys(project2).map((obj) => (
-            <Button text={project3[obj].text}></Button>
+          {Object.keys(project2).map((obj, index) => (
+            <Button text={project2[obj].text} key={index}></Button>
           ))}
         </div>
       ),
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiore",
     },
     {
       id: "4",
@@ -66,11 +69,12 @@ export const data = {
       textShort: 'Sites Built With ReactJS "Tytorify"',
       textButton: (
         <div className="project__tools">
-          {Object.keys(project2).map((obj) => (
-            <Button text={project3[obj].text}></Button>
+          {Object.keys(project2).map((obj, index) => (
+            <Button text={project2[obj].text} key={index}></Button>
           ))}
         </div>
       ),
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiore",
     },
     {
       id: "5",
@@ -79,11 +83,12 @@ export const data = {
       textShort: 'Sites Built With ReactJS "Tytorify"',
       textButton: (
         <div className="project__tools">
-          {Object.keys(project3).map((obj) => (
-            <Button text={project3[obj].text}></Button>
+          {Object.keys(project3).map((obj, index) => (
+            <Button text={project3[obj].text} key={index}></Button>
           ))}
         </div>
       ),
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiore",
     },
     {
       id: "6",
@@ -92,11 +97,12 @@ export const data = {
       textShort: 'Sites Built With ReactJS "Tytorify"',
       textButton: (
         <div className="project__tools">
-          {Object.keys(project3).map((obj) => (
-            <Button text={project3[obj].text}></Button>
+          {Object.keys(project3).map((obj, index) => (
+            <Button text={project3[obj].text} key={index}></Button>
           ))}
         </div>
       ),
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiore",
     },
   ],
 };
