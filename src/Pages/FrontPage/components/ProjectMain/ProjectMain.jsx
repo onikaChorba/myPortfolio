@@ -31,13 +31,16 @@ export const ProjectMain = ({ project }) => {
             </div>
             <div className="projectBlock__info project">
               <p className="project__title title2">{project.name}</p>
-              <div className="project__text text">{project.textShort}</div>
+              <div className="project__text text1">{project.textShort}</div>
               <div className="project__tools">{project.textButton}</div>
             </div>
           </div>
           <div className="projectBlockInfo">
             <div className="projectBlockInfo__title title2">
               <span>{project.name}</span>
+            </div>
+            <div className="projectBlockInfo__text text1">
+              {project.textShort}
             </div>
             <div className="projectBlockInfo__text text">{project.text}</div>
             <button className="projectButton" onClick={handleClickShowDetails}>
