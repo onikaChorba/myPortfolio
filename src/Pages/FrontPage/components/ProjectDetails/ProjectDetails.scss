@@ -23,11 +23,16 @@
     margin: 2% auto;
     text-align: center;
   }
-  &__video {
+  &__sliderTools {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-    padding-bottom: 2%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__slider {
+    box-shadow: 10px 7px 23px -3px rgba(128, 0, 0, 1);
+    border: 2px solid #800000;
+    width: 48%;
+    margin: 5% auto;
+    margin-bottom: 5%;
   }
 }

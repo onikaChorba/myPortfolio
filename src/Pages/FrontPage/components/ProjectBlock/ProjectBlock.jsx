@@ -1,5 +1,5 @@
 import { ProjectMain } from "../ProjectMain/ProjectMain";
-import { data } from "../../../../FrontPageData";
+import { data } from "@/FrontPageData";
 
 export const ProjectBlock = () => {
   return (
