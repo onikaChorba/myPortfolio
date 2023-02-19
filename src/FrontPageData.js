@@ -43,7 +43,7 @@ export const data = {
       id: "1",
       name: "myPortfolio",
       imgMain: imgReact2,
-      textShort: 'Sites Built With ReactJS "Tytorify"',
+      textShort: "Sites Built With ReactJS",
       textButton: (
         <div className="project__tools">
           {Object.keys(project1).map((obj, index) => (
@@ -51,7 +51,7 @@ export const data = {
           ))}
         </div>
       ),
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiores consequuntur fuga laboriosam aut accusamus debitis quibusdam vel rem. Quidem ea possimus dicta perspiciatis dolores officiis.",
+      text: "Created a simple portfolio site using React.js. The site is fast due to the use of functional components and state components",
       gitLink: "https://github.com/onikaChorba/myPortfolio",
       browserLink: "google.com",
       imgSlider: (
@@ -70,12 +70,32 @@ export const data = {
           </SplideSlide>
         </Splide>
       ),
+      list: (
+        <ul className="text textLists">
+          <li className="textList">
+            creative simple functional component and class component
+          </li>
+          <li className="textList">
+            using props to pass data from from a parent component to a child
+            components
+          </li>
+          <li className="textList">using useState, useEffect</li>
+          <li className="textList">
+            creation of simple forms for interaction with the user
+          </li>
+          <li className="textList">adaptation to different screen sizes</li>
+          <li className="textList">
+            site deployed to the github-pages environment by the pages build and
+            deployment workflow
+          </li>
+        </ul>
+      ),
     },
     {
       id: "2",
       name: "tutorify",
       imgMain: imgReact1,
-      textShort: 'Sites Built With ReactJS "Tutorify"',
+      textShort: "Sites Built With ReactJS ",
       textButton: (
         <div className="project__tools">
           {Object.keys(project1).map((obj, index) => (
@@ -83,7 +103,7 @@ export const data = {
           ))}
         </div>
       ),
-      text: "Creative simple functional component and class component. Using props to pass data from from a parent component to a child components. Using useState, useEffect and useMemo. Using common data filtering techniques (filter(), map(), splise()...). Creation of simple forms for interaction with the user, adaptation to different screen sizes. Site deployed to the github-pages environment by the pages build and deployment workflow. ",
+      text: "Creative simple functional component and class component. Using props to pass data from a parent component to a child components. Using useState, useEffect and useMemo. Using common data filtering techniques",
       gitLink: "https://github.com/onikaChorba/tutorify",
       browserLink: "https://onikachorba.github.io/tutorify/",
       imgSlider: (
@@ -102,12 +122,36 @@ export const data = {
           </SplideSlide>
         </Splide>
       ),
+      list: (
+        <ul className="text textLists">
+          <li className="textList">
+            creative simple functional component and class component
+          </li>
+          <li className="textList">
+            using props to pass data from from a parent component to a child
+            components
+          </li>
+          <li className="textList">using useState, useEffect and useMemo</li>
+          <li className="textList">
+            using common data filtering techniques (filter(), map(),
+            splise()...)
+          </li>
+          <li className="textList">
+            creation of simple forms for interaction with the user
+          </li>
+          <li className="textList">adaptation to different screen sizes</li>
+          <li className="textList">
+            site deployed to the github-pages environment by the pages build and
+            deployment workflow
+          </li>
+        </ul>
+      ),
     },
     {
       id: "3",
       name: "community",
       imgMain: imgProject2,
-      textShort: 'Sites Built With ReactJS "Tytorify"',
+      textShort: "Simple animations practice project",
       textButton: (
         <div className="project__tools">
           {Object.keys(project2).map((obj, index) => (
@@ -115,7 +159,7 @@ export const data = {
           ))}
         </div>
       ),
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiore",
+      text: "Settings WebPack, create layout using HTML, SaaS, BEM. Adaptation to different screen sizes. Usage of JavaScript for navigation and creating simple animations.",
       imgSlider: (
         <Splide>
           <SplideSlide>
@@ -132,12 +176,22 @@ export const data = {
           </SplideSlide>
         </Splide>
       ),
+      list: (
+        <ul className="text textLists">
+          <li className="textList">settings WebPack</li>
+          <li className="textList">create layout using HTML, SaaS, BEM</li>
+          <li className="textList">
+            usage of JavaScript for navigation and creating simple animations
+          </li>
+          <li className="textList">adaptation to different screen sizes</li>
+        </ul>
+      ),
     },
     {
       id: "4",
       name: "drinkUp",
       imgMain: imgProject3,
-      textShort: 'Sites Built With ReactJS "Tytorify"',
+      textShort: "Simple animations practice project",
       textButton: (
         <div className="project__tools">
           {Object.keys(project2).map((obj, index) => (
@@ -145,7 +199,7 @@ export const data = {
           ))}
         </div>
       ),
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiore",
+      text: "Settings WebPack, create layout using HTML, SaaS, BEM. Adaptation to different screen sizes. Usage of JavaScript for navigation and creating simple animations.",
       imgSlider: (
         <Splide>
           <SplideSlide>
@@ -159,12 +213,22 @@ export const data = {
           </SplideSlide>
         </Splide>
       ),
+      list: (
+        <ul className="text textLists">
+          <li className="textList">settings WebPack</li>
+          <li className="textList">create layout using HTML, SaaS, BEM</li>
+          <li className="textList">
+            usage of JavaScript for navigation and creating simple animations
+          </li>
+          <li className="textList">adaptation to different screen sizes</li>
+        </ul>
+      ),
     },
     {
       id: "5",
       name: "coffee",
       imgMain: imgProject4,
-      textShort: 'Sites Built With ReactJS "Tytorify"',
+      textShort: "Creative simple site",
       textButton: (
         <div className="project__tools">
           {Object.keys(project3).map((obj, index) => (
@@ -172,7 +236,7 @@ export const data = {
           ))}
         </div>
       ),
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiore",
+      text: "Creation of simple landing pages layout: using HTML and CSS, hover effects, adaptation to different screen sizes, JavaScript for navigation",
       imgSlider: (
         <Splide>
           <SplideSlide>
@@ -189,12 +253,20 @@ export const data = {
           </SplideSlide>
         </Splide>
       ),
+      list: (
+        <ul className="text textLists">
+          <li className="textList">create layout using HTML and CSS </li>
+          <li className="textList"> use of hover effects</li>
+          <li className="textList">usage of JavaScript for navigation</li>
+          <li className="textList">adaptation to different screen sizes</li>
+        </ul>
+      ),
     },
     {
       id: "6",
       name: "nature",
       imgMain: imgProject5,
-      textShort: 'Sites Built With ReactJS "Tytorify"',
+      textShort: "Creative simple site",
       textButton: (
         <div className="project__tools">
           {Object.keys(project3).map((obj, index) => (
@@ -202,7 +274,7 @@ export const data = {
           ))}
         </div>
       ),
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, in ad! Atque ut, asperiore",
+      text: "Creation of simple landing pages layout: using HTML and CSS, hover effects, adaptation to different screen sizes, JavaScript for navigation",
       imgSlider: (
         <Splide>
           <SplideSlide>
@@ -212,6 +284,14 @@ export const data = {
             <img src={imgSliderN2} alt="img" />
           </SplideSlide>
         </Splide>
+      ),
+      list: (
+        <ul className="text textLists">
+          <li className="textList">create layout using HTML and CSS </li>
+          <li className="textList"> use of hover effects</li>
+          <li className="textList">usage of JavaScript for navigation</li>
+          <li className="textList">adaptation to different screen sizes</li>
+        </ul>
       ),
     },
   ],
