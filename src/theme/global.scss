@@ -55,3 +55,21 @@ span {
   padding-top: 5%;
   padding-left: 10%;
 }
+.textLists {
+  padding-top: 2%;
+  width: 75%;
+  margin: 0 auto;
+}
+.textList {
+  color: white;
+  padding: 5px;
+  margin-left: 3%;
+  &::before {
+    content: "";
+    border: 8px #800000 solid !important;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: -40px;
+    position: absolute;
+  }
+}

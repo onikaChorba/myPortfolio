@@ -8,7 +8,9 @@ export const Projects = () => {
         Here you will find some of the personal and clients projects that I
         created with each project containing its own case study
       </p>
-      <ProjectBlock />
+      <div className="projects">
+        <ProjectBlock />
+      </div>
     </section>
   );
 };

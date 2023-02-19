@@ -9,13 +9,10 @@ export const ProjectDetails = ({ project }) => {
       <div className="projectDetails__title title2">
         <span>{project.name}</span>
       </div>
-      <div className="projectDetails__text text">
-        <p className="title3">Project Overview</p>
-        <p className="text1">{project.textShort}</p>
-        <p>{project.text}</p>
-      </div>
+      <p className="title3">Project Overview</p>
+      <div className="projectDetails__list text1">{project.list}</div>
       <div className="projectDetails__sliderTools">
-        <div style={{ width: "48%" }}>
+        <div className="projectDetailsButton">
           <div className="projectDetails__tools">
             <p className="title3">Languages and Tools :</p>
             {project.textButton}
