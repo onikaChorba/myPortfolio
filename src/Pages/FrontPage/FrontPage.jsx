@@ -2,6 +2,7 @@ import { ContactButton } from "@/components/ContactButton/ContactButton";
 import { About } from "./sections/About/About";
 import { Home } from "./sections/Home/Home";
 import { Projects } from "./sections/Projects/Projects";
+import { Resume } from "./sections/Resume/Resume";
 
 export const FrontPage = () => {
   return (
@@ -19,10 +20,7 @@ export const FrontPage = () => {
         <Projects />
       </div>
       <div id="Resume">
-        Resume Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut
-        temporibus quibusdam odio quas veniam quo optio facere dignissimos quos
-        dolores ab fuga, et necessitatibus mollitia blanditiis cum tenetur!
-        Assumenda, laborum!
+        <Resume />
       </div>
       <div id="Contact" className="text">
         Contact Lorem ipsum, dolor sit amet consectetur adipisicing elit.

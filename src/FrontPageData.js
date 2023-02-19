@@ -160,6 +160,8 @@ export const data = {
         </div>
       ),
       text: "Settings WebPack, create layout using HTML, SaaS, BEM. Adaptation to different screen sizes. Usage of JavaScript for navigation and creating simple animations.",
+      gitLink: "https://github.com/onikaChorba/community",
+      browserLink: "https://onikachorba.github.io/community/dist/",
       imgSlider: (
         <Splide>
           <SplideSlide>
@@ -200,6 +202,8 @@ export const data = {
         </div>
       ),
       text: "Settings WebPack, create layout using HTML, SaaS, BEM. Adaptation to different screen sizes. Usage of JavaScript for navigation and creating simple animations.",
+      gitLink: "https://github.com/onikaChorba/drinkUp",
+      browserLink: "https://onikachorba.github.io/drinkUp/dist/",
       imgSlider: (
         <Splide>
           <SplideSlide>
@@ -237,6 +241,8 @@ export const data = {
         </div>
       ),
       text: "Creation of simple landing pages layout: using HTML and CSS, hover effects, adaptation to different screen sizes, JavaScript for navigation",
+      gitLink: "https://github.com/onikaChorba/coffee",
+      browserLink: "https://onikaChorba.github.io/coffee/",
       imgSlider: (
         <Splide>
           <SplideSlide>
@@ -275,6 +281,8 @@ export const data = {
         </div>
       ),
       text: "Creation of simple landing pages layout: using HTML and CSS, hover effects, adaptation to different screen sizes, JavaScript for navigation",
+      gitLink: "https://github.com/onikaChorba/nature",
+      browserLink: "https://onikaChorba.github.io/nature/",
       imgSlider: (
         <Splide>
           <SplideSlide>
