@@ -1,18 +1,29 @@
 import "./Resume.scss";
 import pdfFile from "@/assets/CV.pdf";
+import { Link } from "react-scroll";
 export const Resume = () => {
   return (
     <section className="resume section">
       <h2 className="resume__title title2">Resume</h2>
       <p className="text resume__text">
         Reach out to me via my
-        <span>
-          <a href="#Contact"> contact page </a>
-        </span>
+        <Link
+          to="Contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          className="resume__link"
+        >
+          <span> contact page </span>
+        </Link>
         view or
-        <span onClick={() => window.open(pdfFile)}> download </span> the resume
+        <span onClick={() => window.open(pdfFile)} className="resume__link">
+          download
+        </span>
+        the resume
       </p>
-      <div>
+      <div className="resume__resume">
         <iframe
           src="https://drive.google.com/file/d/1utKYPZF8VFFABYUFGyK5Ou9jaLsdhZfq/preview"
           width={700}
