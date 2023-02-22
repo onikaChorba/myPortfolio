@@ -11,6 +11,7 @@
     margin-bottom: 2%;
   }
   &__input {
+    width: 100%;
     border: 1px solid #800000;
     background: black;
     padding: 3%;
@@ -29,4 +30,8 @@
     font-weight: 600;
     color: white;
   }
+}
+input [value="text"] {
+  background: black;
+  color: white;
 }
