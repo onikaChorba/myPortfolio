@@ -17,10 +17,10 @@ export const Resume = () => {
         >
           <span> contact page </span>
         </Link>
-        view or
+        view or{" "}
         <span onClick={() => window.open(pdfFile)} className="resume__link">
           download
-        </span>
+        </span>{" "}
         the resume
       </p>
       <div className="resume__resume">
