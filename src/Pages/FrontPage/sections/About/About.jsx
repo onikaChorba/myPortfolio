@@ -24,10 +24,9 @@ export const About = () => {
     <section className="about section">
       <h2 className="about__title title2">About me</h2>
       <p className="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit optio
-        tenetur consequatur nisi ducimus sed aut, vel, explicabo iure nesciunt
-        ad numquam error cumque obcaecati inventore, voluptatum deserunt
-        perferendis. Rem.
+        In this section, you will find more information about me, my
+        professional background, and my current skills primarily in programming
+        and technology.
       </p>
       <h2 className="about__title title2">My skills</h2>
       <div className="about__icon">
@@ -35,6 +34,18 @@ export const About = () => {
           <img src={el.src} alt={el.alt} className="iconSkills" key={index} />
         ))}
       </div>
+      <h2 className="about__title title2">
+        <h2 className="about__title title2">
+          My stats on <span>GitHub</span>
+        </h2>
+      </h2>
+      <a href="https://git.io/streak-stats">
+        {" "}
+        <img
+          src="http://github-readme-streak-stats.herokuapp.com?user=onikaChorba&theme=dark&hide_border=true&border_radius=4.8"
+          alt="status"
+        />
+      </a>
     </section>
   );
 };

@@ -6,7 +6,9 @@ export const Resume = () => {
     <section className="resume section">
       <h2 className="resume__title title2">Resume</h2>
       <p className="text resume__text">
-        Reach out to me via my
+        I am currently seeking new job opportunities that allow me to
+        contribute, learn and grow. If you have an opportunity that aligns with
+        my skills and experience, please do not hesitate to out to me via my
         <Link
           to="Contact"
           spy={true}
