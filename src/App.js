@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import "./index.scss";
 import { FrontPage } from "./Pages/FrontPage/FrontPage";
@@ -8,6 +9,7 @@ function App() {
       <menu className="mainContainer">
         <FrontPage />
       </menu>
+      <Footer />
     </div>
   );
 }

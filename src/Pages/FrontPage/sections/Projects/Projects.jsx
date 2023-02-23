@@ -5,8 +5,9 @@ export const Projects = () => {
     <section className="projects section">
       <h2 className="projects__title title2">Projects</h2>
       <p className="text">
-        Here you will find some of the personal and clients projects that I
-        created with each project containing its own case study
+        Here you can explore some of the personal projects I have created. By
+        examining these projects, you can gain a better understanding of my
+        skills and approach to web development.
       </p>
       <div className="projects">
         <ProjectBlock />

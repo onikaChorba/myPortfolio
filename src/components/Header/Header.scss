@@ -48,6 +48,9 @@
   margin-right: 3%;
   @include font-size(700, 20px, 24px);
   color: white;
+  &:hover {
+    color: #800000;
+  }
 }
 .headerNavActive {
   color: #800000;
