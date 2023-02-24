@@ -19,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b deploy -d build",
+    "deploy": "gh-pages -b main -d build",
     "start": "craco start",
     "build": "craco build && cp build/index.html build/404.html",
     "test": "craco test",
