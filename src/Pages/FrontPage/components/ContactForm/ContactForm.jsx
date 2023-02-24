@@ -34,8 +34,8 @@ export const ContactForm = () => {
         </label>
         <input
           type="email"
-          id="user_email"
-          name="email"
+          id="email"
+          name="user_email"
           className="form__input text1"
           placeholder="Enter Your Email"
         />
