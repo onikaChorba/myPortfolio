@@ -24,6 +24,9 @@ import imgSliderCoffee3 from "@/assets/img/SliderC3.png";
 import imgSliderCoffee4 from "@/assets/img/SliderC4.png";
 import imgSliderN1 from "@/assets/img/SliderN1.png";
 import imgSliderN2 from "@/assets/img/SliderN2.png";
+import imgSliderP1 from "@/assets/img/imgSliderP1.png";
+import imgSliderP2 from "@/assets/img/imgSliderP2.png";
+import imgSliderP3 from "@/assets/img/imgSliderP3.png";
 const project1 = [
   { text: "React" },
   { text: "TypeScript" },
@@ -51,22 +54,19 @@ export const data = {
           ))}
         </div>
       ),
-      text: "Created a simple portfolio site using React.js. The site is fast due to the use of functional components and state components",
+      text: "I have designed and developed a personal portfolio site using React.js, which has enabled me to showcase my skills and experience as a web developer. One of the key features of the site is its fast loading time, which is made possible by the use of functional components and state components.",
       gitLink: "https://github.com/onikaChorba/myPortfolio",
       browserLink: "google.com",
       imgSlider: (
         <Splide>
           <SplideSlide>
-            <img src={imgSliderT1} alt="img" />
+            <img src={imgSliderP1} alt="img" />
           </SplideSlide>
           <SplideSlide>
-            <img src={imgSliderT2} alt="img" />
+            <img src={imgSliderP2} alt="img" />
           </SplideSlide>
           <SplideSlide>
-            <img src={imgSliderT3} alt="img" />
-          </SplideSlide>
-          <SplideSlide>
-            <img src={imgSliderT4} alt="img" />
+            <img src={imgSliderP3} alt="img" />
           </SplideSlide>
         </Splide>
       ),

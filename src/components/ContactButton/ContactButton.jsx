@@ -1,7 +1,7 @@
 import "./ContactButton.scss";
-import gitHub from "../../assets/img/gitIcon.png";
-import linkedIn from "../../assets/img/linkIcon.png";
-import gmail from "../../assets/img/gmail.png";
+import gitHub from "@/assets/img/gitIcon.png";
+import linkedIn from "@/assets/img/linkIcon.png";
+import gmail from "@/assets/img/gmail.png";
 export const ContactButton = () => {
   const contactButton = [
     { href: "https://github.com/onikaChorba", src: gitHub },

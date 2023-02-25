@@ -1,5 +1,4 @@
 import { ContactForm } from "../../components/ContactForm/ContactForm";
-import "./Contact.scss";
 export const Contact = () => {
   return (
     <section className="contact section">

@@ -20,28 +20,36 @@ export const ProjectDetails = ({ project }) => {
           <div className="projectDetails__links">
             <p className="title3"> See life</p>
             <div className="buttonLinkBlock">
-              <button className="buttonLink">
-                <a
-                  href={project.gitLink}
-                  className="buttonLink__text"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Site on <span>gitHub</span>
-                </a>
-                <img src={gitHub} alt="gitHub" className="buttonLink__icon" />
-              </button>
-              <button className="buttonLink">
-                <a
-                  href={project.browserLink}
-                  target="_blank"
-                  className="buttonLink__text"
-                  rel="noreferrer"
-                >
-                  Site on <span> browser</span>
-                </a>
-                <img src={browser} alt="browser" className="buttonLink__icon" />
-              </button>
+              <a
+                href={project.gitLink}
+                className="buttonLink__text"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="buttonLink">
+                  <p>
+                    Site on <span> gitHub </span>
+                  </p>
+                  <img src={gitHub} alt="gitHub" className="buttonLink__icon" />
+                </div>
+              </a>
+              <a
+                href={project.browserLink}
+                target="_blank"
+                className="buttonLink__text"
+                rel="noreferrer"
+              >
+                <div className="buttonLink">
+                  <p>
+                    Site on <span> browser</span>
+                  </p>
+                  <img
+                    src={browser}
+                    alt="browser"
+                    className="buttonLink__icon"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>
