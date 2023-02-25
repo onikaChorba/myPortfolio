@@ -17,7 +17,7 @@ export const ContactForm = () => {
   return (
     <form ref={form} className="form" onSubmit={sendEmail} id="form">
       <div className="name">
-        <label className="text1" for="name" id="name">
+        <label className="text1" htmlFor="name" id="name">
           <p className="form__label">Name</p>
         </label>
         <input
@@ -29,7 +29,7 @@ export const ContactForm = () => {
         />
       </div>
       <div className="email">
-        <label className="text1" for="email">
+        <label className="text1" htmlFor="email">
           <p className="form__label">Email</p>
         </label>
         <input
@@ -41,7 +41,7 @@ export const ContactForm = () => {
         />
       </div>
       <div className="message">
-        <label className=" text1" for="message">
+        <label className=" text1" htmlFor="message">
           <p className="form__label"> Message</p>
         </label>
         <textarea

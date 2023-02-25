@@ -1,3 +1,4 @@
+@import "@/index.scss";
 .project {
   &__titleBlock {
     display: flex;
@@ -5,7 +6,7 @@
     width: 80%;
   }
   &__title {
-    margin: 0 auto;
+    margin: 5% auto;
   }
   &__text {
     padding-top: 10%;
@@ -25,19 +26,25 @@
   flex-wrap: wrap;
 }
 .projectBlockInfo {
-  width: 48%;
+  width: 100%;
+  @include screen-tb {
+    width: 48%;
+  }
 }
 .projectBlock {
   cursor: pointer;
   box-shadow: 10px 7px 23px -3px rgba(128, 0, 0, 1);
   border: 2px solid #800000;
-  width: 48%;
+  width: 100%;
   min-height: 400px;
   margin-bottom: 1%;
   transform: translateY(0%);
   margin: auto;
   margin-bottom: 5%;
   overflow: hidden;
+  @include screen-tb {
+    width: 48%;
+  }
   &__img {
     margin: 1%;
     width: 100%;

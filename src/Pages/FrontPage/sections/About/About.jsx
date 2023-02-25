@@ -23,10 +23,16 @@ export const About = () => {
   return (
     <section className="about section">
       <h2 className="about__title title2">About me</h2>
-      <p className="text">
-        In this section, you will find more information about me, my
-        professional background, and my current skills primarily in programming
-        and technology.
+      <p className="text about__text">
+        As a self-taught frontend developer, I have gained extensive experience
+        in building web applications using various front-end technologies.
+        Currently, my focus is on the React stack, which I have been studying in
+        depth to master its features and capabilities.
+      </p>
+      <p className="text about__text">
+        I am passionate about my work and am constantly seeking opportunities to
+        expand my knowledge and skills to create better, more dynamic web
+        applications.
       </p>
       <h2 className="about__title title2">My skills</h2>
       <div className="about__icon">
@@ -35,9 +41,7 @@ export const About = () => {
         ))}
       </div>
       <h2 className="about__title title2">
-        <h2 className="about__title title2">
-          My stats on <span>GitHub</span>
-        </h2>
+        My stats on <span>GitHub</span>
       </h2>
       <a href="https://git.io/streak-stats">
         {" "}

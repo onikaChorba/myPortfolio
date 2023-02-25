@@ -6,16 +6,16 @@
   padding: 15px;
   height: 66px;
   border-radius: 10px;
-  margin-left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 20px;
   &__text {
     color: white;
-    margin-right: 20px;
   }
   &__icon {
-    width: 45px;
+    margin-left: 10px;
+    width: 40px;
   }
 }
 .projectDetails {

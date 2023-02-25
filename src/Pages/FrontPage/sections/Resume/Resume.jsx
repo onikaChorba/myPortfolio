@@ -1,6 +1,9 @@
 import "./Resume.scss";
+import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import pdfFile from "@/assets/CV.pdf";
 import { Link } from "react-scroll";
+import "react-pdf/dist/esm/Page/TextLayer.css";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 export const Resume = () => {
   return (
     <section className="resume section">
@@ -26,14 +29,9 @@ export const Resume = () => {
         the resume
       </p>
       <div className="resume__resume">
-        <iframe
-          src="https://drive.google.com/file/d/1utKYPZF8VFFABYUFGyK5Ou9jaLsdhZfq/preview"
-          width={700}
-          height={500}
-          allow="autoplay"
-          allowFullScreen
-          title="resume"
-        ></iframe>
+        <Document file={pdfFile}>
+          <Page pageNumber={1} />
+        </Document>
       </div>
     </section>
   );
