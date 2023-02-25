@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# 👩‍💻 Welcome to my portfolio site created with React!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The portfolio site has been designed with a focus on both functionality and aesthetics, incorporating various techniques to create an engaging and visually appealing website. 
 
-## Available Scripts
+On the homepage, you'll find a brief introduction about me and my skills. You can also navigate to my projects page where you can see some of my recent work. Each project card includes a brief description and a link to the live site or code repository.
 
-In the project directory, you can run:
+## 🛠️ Used metods and tools
 
-### `npm start`
+### ⛳️ creative simple functional component and class component
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I used React's functional components and the useState hook to build this site. React's functional components make it easy to create reusable code and keep our code organized. useState hook allowed me to manage state within functional components, which is great for building interactive user interfaces.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🗂️ using props to pass data from from a parent component to a child components 
 
-### `npm test`
+To transfer data between components, props are used, which simplifies the data flow and makes the code more readable.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🚀 using useState, useEffect
 
-### `npm run build`
+The site also employs React's useState, useEffect, and useMemo hooks, which are essential tools for state management, component lifecycle management, and performance optimization, respectively. By leveraging these hooks, the site can respond to user interactions quickly and efficiently.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🚴‍♀️ creation of simple forms for interaction with the user 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The portfolio site also features simple forms that enable user interaction and provide a seamless user experience. By leveraging React's form handling capabilities, the site can process user input quickly and efficiently, resulting in a smooth and satisfying user experience.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📱 adaptation to different screen sizes
 
-### `npm run eject`
+The use of responsive design ensures that the site remains functional and visually appealing on devices of various sizes. This makes the site accessible to a broader range of users and ensures that they can enjoy the site's full functionality regardless of the device they are using. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🔥 site deployed to the github-pages environment by the pages build and deployment workflow
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This ensures that the site is available to users worldwide and can be accessed from any device with an internet connection.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
