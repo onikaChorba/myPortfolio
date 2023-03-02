@@ -9,7 +9,7 @@ export const ContactButton = () => {
       href: "https://www.linkedin.com/in/оnika-chorba-2b0339198/",
       src: linkedIn,
     },
-    { href: "gmail.com", src: gmail },
+    { href: "mailto:onika.chorba@gmail.com", src: gmail },
   ];
   return (
     <section className="contactButton">
