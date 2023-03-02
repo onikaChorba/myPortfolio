@@ -11,15 +11,15 @@ function App() {
         <title>Onika Chorba | Frontend Developer</title>
         <link
           rel="icon"
-          href="https://media.giphy.com/media/3kPDmoWdBpQPNhCnUG/giphy.gif"
+          href="%PUBLIC_URL%https://media.giphy.com/media/3kPDmoWdBpQPNhCnUG/giphy.gif"
         />
         <link
           rel="manifest"
-          href="https://media.giphy.com/media/3kPDmoWdBpQPNhCnUG/giphy.gif"
+          href="%PUBLIC_URL%https://media.giphy.com/media/3kPDmoWdBpQPNhCnUG/giphy.gif"
         />
         <link
           rel="apple-touch-icon"
-          href="https://media.giphy.com/media/3kPDmoWdBpQPNhCnUG/giphy.gif"
+          href="%PUBLIC_URL%https://media.giphy.com/media/3kPDmoWdBpQPNhCnUG/giphy.gif"
         />
       </Helmet>
       <div className="wrapper">
