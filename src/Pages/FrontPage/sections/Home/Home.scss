@@ -1,5 +1,6 @@
 @import "@/index.scss";
 .home {
+  min-height: 100vh;
   @include position-center(flex, column, center, center);
   height: auto;
   color: white;
