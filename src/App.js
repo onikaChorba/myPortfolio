@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       <Helmet>
-        <link rel="icon" href="/images/icon.png"></link>
         <title>Onika Chorba | Frontend Developer</title>
       </Helmet>
       <div className="wrapper">
