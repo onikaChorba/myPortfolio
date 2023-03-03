@@ -1,6 +1,6 @@
 import "./Header.scss";
 import { Link } from "react-scroll";
-import myImg from "../../assets/img/img1.png";
+import myImg from "../../assets/img/img1.jpeg";
 export const Header = () => {
   const headerNav = [
     { text: "Home", to: "Home" },
