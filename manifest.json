@@ -5,17 +5,17 @@
   "name": "Create React App Sample",
   "icons": [
     {
-      "src": "/github.png",
+      "src": "flavicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "/github.png",
+      "src": "flavicon.ico",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/github.png",
+      "src": "flavicon.ico",
       "type": "image/png",
       "sizes": "512x512"
     }
