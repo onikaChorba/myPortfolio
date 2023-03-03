@@ -8,19 +8,8 @@ function App() {
   return (
     <>
       <Helmet>
+        <link rel="icon" href="/images/icon.png"></link>
         <title>Onika Chorba | Frontend Developer</title>
-        <link
-          rel="icon"
-          href="%PUBLIC_URL%https://media.giphy.com/media/3kPDmoWdBpQPNhCnUG/giphy.gif"
-        />
-        <link
-          rel="manifest"
-          href="%PUBLIC_URL%https://media.giphy.com/media/3kPDmoWdBpQPNhCnUG/giphy.gif"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="%PUBLIC_URL%https://media.giphy.com/media/3kPDmoWdBpQPNhCnUG/giphy.gif"
-        />
       </Helmet>
       <div className="wrapper">
         <Header />
