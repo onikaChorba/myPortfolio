@@ -1,0 +1,30 @@
+@import "@/index.scss";
+.homeInfo {
+  width: 50%;
+  @include position-center(flex, column, center, center);
+  height: auto;
+  color: white;
+  padding-top: 50%;
+  padding-bottom: 2%;
+  @include screen-tb {
+    padding-top: 17%;
+  }
+
+  &__img {
+    width: 40%;
+    padding-bottom: 3%;
+    @include screen-tb {
+      width: 20%;
+    }
+  }
+  &__title1 {
+    text-align: center;
+    text-transform: uppercase;
+    @include font-size(700, 44px, 50px);
+  }
+  &__text {
+    text-align: center;
+    width: 70%;
+    padding-bottom: 10%;
+  }
+}
