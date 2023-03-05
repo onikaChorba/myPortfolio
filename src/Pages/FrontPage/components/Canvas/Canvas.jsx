@@ -18,14 +18,13 @@ const Canvas = () => {
     const ctx = canvas.getContext("2d");
 
     // constants for circle
-    const circle = [];
-    const maxCircle = 30;
+    const circles = [];
+    const maxCircle = 50;
     const colors = ["white", "red", "grey", "maroon"];
     const minRadius = 2.5;
     const maxRadius = 5.5;
-    const plusCircle = 0.25;
-    // get random circle
 
+    // get random circle
     const getCircle = () => {
       for (let i = 0; i < maxCircle; i++) {
         const radius = Math.random() * (maxRadius - minRadius) + minRadius;
@@ -34,14 +33,13 @@ const Canvas = () => {
         // const speedX = Math.random() * 2 - 1;
         // const speedY = Math.random() * 2 - 1;
         const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        circle.push({ x, y, radius, randomColor });
+        circles.push({ x, y, radius, randomColor });
       }
     };
-
     // function draw circle
     const drawCircle = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      circle.forEach((circle) => {
+      circles.forEach((circle, key) => {
         ctx.beginPath();
         ctx.arc(
           // (circle.x += circle.speedX),
@@ -53,35 +51,44 @@ const Canvas = () => {
           Math.PI * 2,
           false
         );
+        // const newNext = circles.find(
+        //   (el) => el.x && el.y < circle.x && circle.y
+        // );
+        const next = circles[key + 1] || circles[0];
+        ctx.moveTo(circle.x, circle.y);
+        ctx.lineTo(next.x, next.y);
+
+        ctx.stroke();
+
+        ctx.strokeStyle = "grey";
+        ctx.lineWidth = 1;
         ctx.fillStyle = circle.randomColor;
         ctx.fill();
       });
       requestAnimationFrame(drawCircle);
     };
+
     // plus and minuc circle
     const upDateCircle = () => {
-      for (let i = 0; i < 2; i++) {
-        if ((circle.length = maxCircle)) {
-          const randomIndex = Math.floor(Math.random() * plusCircle);
-          circle.splice(randomIndex, 1);
+      for (let i = 0; i < 5; i++) {
+        if (circles.length > 0) {
+          const randomIndex = Math.floor(Math.random() * circles.length);
+          circles.splice(randomIndex, 1);
         }
       }
-
-      for (let i = 0; i < 2; i++) {
-        if (circle.length > maxCircle) {
-          const x = Math.random() * canvas.width;
-          const y = Math.random() * canvas.height;
-          circle.push({ x, y });
-        }
+      for (let i = 0; i < 5; i++) {
+        const radius = Math.random() * (maxRadius - minRadius) + minRadius;
+        const x = Math.random() * canvas.width;
+        const y = Math.random() * canvas.height;
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        circles.push({ x, y, radius, randomColor });
       }
-      requestAnimationFrame(getCircle);
+      requestAnimationFrame(drawCircle);
     };
-
-    const drawLine = () => {};
     const animate = () => {
       getCircle();
       drawCircle();
-      setInterval(upDateCircle, 3000);
+      setInterval(upDateCircle, 1000);
     };
     animate();
   }, []);
