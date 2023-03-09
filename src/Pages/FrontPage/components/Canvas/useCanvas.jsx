@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 
-const useCanvas = (animate) => {
+const useCanvas = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -19,65 +19,123 @@ const useCanvas = (animate) => {
 
     // constants for circle
     const circles = [];
-    const maxCircle = 50;
-    const colors = ["white", "red", "grey", "maroon"];
-    const minRadius = 2.5;
-    const maxRadius = 5.5;
 
-    // get random circle
-    const getCircle = () => {
-      for (let i = 0; i < maxCircle; i++) {
-        const radius = Math.random() * (maxRadius - minRadius) + minRadius;
-        const x = Math.random() * canvas.width;
-        const y = Math.random() * canvas.height;
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        circles.push({ x, y, radius, randomColor });
+    const properties = {
+      bg: "black",
+      colors: ["white", "red", "grey", "maroon"],
+      radius: 2,
+      maxCircle: 80,
+      maxV: 0.5,
+      minRadius: 2.5,
+      maxRadius: 4.5,
+      lineLength: 150,
+      circlesLife: 18,
+    };
+    class Circles {
+      constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.vX = Math.random() * (properties.maxV * 2) - properties.maxV;
+        this.vY = Math.random() * (properties.maxV * 2) - properties.maxV;
+        this.circlesLife = Math.random() * properties.circlesLife * 60;
+        this.randomColor =
+          properties.colors[
+            Math.floor(Math.random() * properties.colors.length)
+          ];
+        this.radius =
+          Math.random() * (properties.maxRadius - properties.minRadius) +
+          properties.minRadius;
       }
-    };
-    // function draw circle
-    const drawCircle = () => {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      circles.forEach((circle, key) => {
+      position() {
+        return (
+          (this.x + this.vX > canvas.width && this.vX > 0) ||
+          (this.x + this.vX < 0 && this.vX < 0)
+            ? (this.vX *= -1)
+            : this.vX,
+          (this.y + this.vY > canvas.height && this.vY > 0) ||
+          (this.y + this.vY < 0 && this.vY < 0)
+            ? (this.vY *= -1)
+            : this.vY,
+          (this.x += this.vX),
+          (this.y += this.vY)
+        );
+      }
+      reDraw() {
         ctx.beginPath();
-        ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2, false);
-        const next1 = circles[key + 1] || circles[0];
-        ctx.moveTo(circle.x, circle.y);
-        ctx.lineTo(next1.x, next1.y);
-        ctx.stroke();
-        ctx.strokeStyle = "grey";
-        ctx.lineWidth = 1;
-        ctx.fillStyle = circle.randomColor;
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.closePath();
+        ctx.fillStyle = this.randomColor;
         ctx.fill();
-      });
-      requestAnimationFrame(drawCircle);
+      }
+      reLiveCircle() {
+        if (this.circlesLife < 1) {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.vX = Math.random() * (properties.maxV * 2) - properties.maxV;
+          this.vY = Math.random() * (properties.maxV * 2) - properties.maxV;
+          this.circlesLife = Math.random() * properties.circlesLife * 660;
+          this.randomColor =
+            properties.colors[
+              Math.floor(Math.random() * properties.colors.length)
+            ];
+          this.radius =
+            Math.random() * (properties.maxRadius - properties.minRadius) +
+            properties.minRadius;
+        }
+        this.circlesLife--;
+      }
+    }
+    const reDrawBackground = () => {
+      ctx.fillStyle = properties.bg;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
     };
 
-    // plus and minuc circle
-    const upDateCircle = () => {
-      for (let i = 0; i < 5; i++) {
-        if (circles.length > 0) {
-          const randomIndex = Math.floor(Math.random() * circles.length);
-          circles.splice(randomIndex, 1);
+    const drawLines = () => {
+      let x1, y1, x2, y2, length, opacity;
+      for (let i in circles) {
+        for (let j in circles) {
+          x1 = circles[i].x;
+          y1 = circles[i].y;
+          x2 = circles[j].x;
+          y2 = circles[j].y;
+
+          length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+          if (length < properties.lineLength) {
+            opacity = 1 - length / properties.lineLength;
+            ctx.lineWindth = "0.3";
+            ctx.strokeStyle = "rgb(77, 0, 0, " + opacity + ")";
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.closePath();
+            ctx.stroke();
+          }
         }
       }
-      for (let i = 0; i < 5; i++) {
-        const radius = Math.random() * (maxRadius - minRadius) + minRadius;
-        const x = Math.random() * canvas.width;
-        const y = Math.random() * canvas.height;
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        circles.push({ x, y, radius, randomColor });
+    };
+
+    const reDrawCircles = () => {
+      for (let i in circles) {
+        circles[i].reLiveCircle();
+        circles[i].reDraw();
+        circles[i].position();
       }
-      requestAnimationFrame(drawCircle);
+    };
+    const loop = () => {
+      reDrawBackground();
+      drawLines();
+      reDrawCircles();
+
+      requestAnimationFrame(loop);
     };
     const animate = () => {
-      getCircle();
-      drawCircle();
-      setInterval(upDateCircle, 1000);
+      for (let i = 0; i < properties.maxCircle; i++) {
+        circles.push(new Circles());
+      }
+      loop();
     };
     animate();
-  }, [animate]);
-
+  });
   return canvasRef;
 };
 export default useCanvas;
