@@ -1,6 +1,6 @@
 @import "@/index.scss";
 .homeInfo {
-  width: 50%;
+  width: 100%;
   @include position-center(flex, column, center, center);
   height: auto;
   color: white;
@@ -14,7 +14,7 @@
     width: 40%;
     padding-bottom: 3%;
     @include screen-tb {
-      width: 20%;
+      width: 10%;
     }
   }
   &__title1 {
