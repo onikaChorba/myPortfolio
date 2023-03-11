@@ -17,6 +17,11 @@ export const HomeInfo = () => {
         my skills I strive to create an engaging and intuitive user experience
         that drives the success of the overall product.
       </p>
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   );
 };
