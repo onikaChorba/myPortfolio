@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import "./HomeInfo.scss";
 
 export const HomeInfo = () => {
@@ -17,6 +18,20 @@ export const HomeInfo = () => {
         my skills I strive to create an engaging and intuitive user experience
         that drives the success of the overall product.
       </p>
+      <Link
+        className="arrow"
+        to="About"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+      >
+        <div className="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </Link>
     </div>
   );
 };

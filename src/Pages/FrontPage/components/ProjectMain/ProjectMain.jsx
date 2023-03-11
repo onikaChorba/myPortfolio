@@ -44,7 +44,7 @@ export const ProjectMain = ({ project }) => {
             </div>
             <div className="projectBlockInfo__text text">{project.text}</div>
             <button className="projectButton" onClick={handleClickShowDetails}>
-              <p className="text">more info </p>
+              <p className="text1">more info </p>
               <img src={arrow} alt="arrow" className="arrow" />
             </button>
           </div>
