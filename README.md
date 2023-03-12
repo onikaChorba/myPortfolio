@@ -30,3 +30,7 @@ The use of responsive design ensures that the site remains functional and visual
 
 This ensures that the site is available to users worldwide and can be accessed from any device with an internet connection.
 
+### 🪢 using canvas to create animations
+
+Using canvas to create animations is a powerful technique that can add an engaging and interactive element to a website. Methods of React was utilized to update the canvas in response to user input or changes in the application's data.
+
