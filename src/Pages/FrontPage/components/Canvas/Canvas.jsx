@@ -1,6 +1,6 @@
 import React from "react";
 import useCanvas from "./useCanvas";
-import "./Canvas.scss";
+
 const Canvas = (props) => {
   const { animate, ...rest } = props;
   const canvasRef = useCanvas(animate);

@@ -1,8 +1,10 @@
 import "./Footer.scss";
 export const Footer = () => {
   return (
-    <footer className="footer">
-      <p className="text">© Made by Onika Chorba</p>
+    <footer>
+      <div className="footer">
+        <p className="text">© Made by Onika Chorba</p>
+      </div>
     </footer>
   );
 };
