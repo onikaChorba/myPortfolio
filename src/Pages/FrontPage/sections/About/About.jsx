@@ -43,8 +43,12 @@ export const About = () => {
       <h2 className="about__title title2">
         My stats on <span>GitHub</span>
       </h2>
+      <img
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=onikaChorba&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact"
+        alt="status"
+        style={{ display: "block", paddingBottom: "2rem" }}
+      />
       <a href="https://git.io/streak-stats">
-        {" "}
         <img
           src="http://github-readme-streak-stats.herokuapp.com?user=onikaChorba&theme=dark&hide_border=true&border_radius=4.8"
           alt="status"
