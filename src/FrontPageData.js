@@ -27,6 +27,9 @@ import imgSliderN2 from "@/assets/img/SliderN2.png";
 import imgSliderP1 from "@/assets/img/imgSliderP1.png";
 import imgSliderP2 from "@/assets/img/imgSliderP2.png";
 import imgSliderP3 from "@/assets/img/imgSliderP3.png";
+import imgTestAPI1 from "@/assets/img/testAPI1.png";
+import imgTestAPI2 from "@/assets/img/testAPI2.png";
+import imgTestAPI3 from "@/assets/img/testAPI3.png";
 const project1 = [
   { text: "React" },
   { text: "TypeScript" },
@@ -40,10 +43,73 @@ const project2 = [
   { text: "webpack" },
 ];
 const project3 = [{ text: "HTML" }, { text: "CSS" }, { text: "javaScript" }];
+const project4 = [
+  { text: "Next" },
+  { text: "React" },
+  { text: "TypeScript" },
+  { text: "javaScript" },
+  { text: "Saas" },
+  { text: "API" },
+];
 export const data = {
   dataProject: [
     {
-      id: "1",
+      id: "7",
+      name: "testAPI",
+      imgMain: imgTestAPI1,
+      textShort: "Next.js site for testing API",
+      textButton: (
+        <div className="project__tools">
+          {Object.keys(project4).map((obj, index) => (
+            <Button text={project4[obj].text} key={index}></Button>
+          ))}
+        </div>
+      ),
+      text: "This is a simple website built with Next.js that can be used for testing APIs. It includes a homepage that displays a random quote and a favorites page where users can save and view their favorite quotes...",
+      gitLink: "https://github.com/onikaChorba/testAPI",
+      browserLink: "https://test-api-xi-azure.vercel.app",
+      imgSlider: (
+        <Splide>
+          <SplideSlide>
+            <img src={imgTestAPI1} alt="img" />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={imgTestAPI2} alt="img" />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={imgTestAPI3} alt="img" />
+          </SplideSlide>
+        </Splide>
+      ),
+      list: (
+        <ul className="text textLists">
+          <li className="textList">
+            This is a simple website built with Next.js that can be used for
+            testing APIs. It includes a homepage that displays a random quote
+            and a favorites page where users can save and view their favorite
+            quotes.
+          </li>
+          <li className="textList">
+            This website also includes two additional pages - a product page and
+            a movies page.
+          </li>
+          <li className="textList">using useState, useEffect</li>
+          <li className="textList">
+            The product page displays a list of products that can be sorted by
+            category and price. Users can browse through the products and view
+            additional details by clicking on individual items.
+          </li>
+          <li className="textList">
+            The movies page displays a list of popular movies and actors. Users
+            can click on a movie or an actor to view more information about
+            them, including a brief description and a list of related movies or
+            actors.
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: "6",
       name: "myPortfolio",
       imgMain: imgReact2,
       textShort: "Sites Built With ReactJS",
@@ -56,7 +122,7 @@ export const data = {
       ),
       text: "I have designed and developed a personal portfolio site using React.js, which has enabled me to showcase my skills and experience as a web developer. One of the key features of the site is its fast loading time, which is made possible by the use of functional components and state components.",
       gitLink: "https://github.com/onikaChorba/myPortfolio",
-      browserLink: "google.com",
+      browserLink: "https://onikachorba.github.io/myPortfolio/",
       imgSlider: (
         <Splide>
           <SplideSlide>
@@ -92,7 +158,7 @@ export const data = {
       ),
     },
     {
-      id: "2",
+      id: "5",
       name: "tutorify",
       imgMain: imgReact1,
       textShort: "Sites Built With ReactJS ",
@@ -148,7 +214,7 @@ export const data = {
       ),
     },
     {
-      id: "3",
+      id: "4",
       name: "community",
       imgMain: imgProject2,
       textShort: "Simple animations practice project",
@@ -190,7 +256,7 @@ export const data = {
       ),
     },
     {
-      id: "4",
+      id: "3",
       name: "drinkUp",
       imgMain: imgProject3,
       textShort: "Simple animations practice project",
@@ -229,7 +295,7 @@ export const data = {
       ),
     },
     {
-      id: "5",
+      id: "2",
       name: "coffee",
       imgMain: imgProject4,
       textShort: "Creative simple site",
@@ -269,7 +335,7 @@ export const data = {
       ),
     },
     {
-      id: "6",
+      id: "1",
       name: "nature",
       imgMain: imgProject5,
       textShort: "Creative simple site",
