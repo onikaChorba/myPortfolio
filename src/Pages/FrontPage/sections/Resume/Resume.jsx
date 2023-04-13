@@ -5,7 +5,7 @@ import { Animation } from "../../components/Animation/Animation";
 export const Resume = () => {
   return (
     <section className="resume">
-      <div className="section resume__info">
+      <div className="resume__info">
         <h2 className="resume__title title2">Resume</h2>
         <p className="text ">
           I am currently seeking new job opportunities that allow me to

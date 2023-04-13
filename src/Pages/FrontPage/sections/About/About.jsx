@@ -21,7 +21,7 @@ export const About = () => {
     { src: figma, alt: "figma" },
   ];
   return (
-    <section className="about section">
+    <section className="about">
       <h2 className="about__title title2">About me</h2>
       <p className="text about__text">
         As a self-taught frontend developer, I have gained extensive experience
@@ -36,18 +36,19 @@ export const About = () => {
       </p>
       <h2 className="about__title title2">My skills</h2>
       <div className="about__icon">
+        <img
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=onikaChorba&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact"
+          alt="status"
+          style={{ paddingBottom: "2rem", paddingTop: "2rem" }}
+        />
         {icon.map((el, index) => (
           <img src={el.src} alt={el.alt} className="iconSkills" key={index} />
         ))}
       </div>
+
       <h2 className="about__title title2">
         My stats on <span>GitHub</span>
       </h2>
-      <img
-        src="https://github-readme-stats.vercel.app/api/top-langs/?username=onikaChorba&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact"
-        alt="status"
-        style={{ display: "block", paddingBottom: "2rem" }}
-      />
       <a href="https://git.io/streak-stats">
         <img
           src="http://github-readme-streak-stats.herokuapp.com?user=onikaChorba&theme=dark&hide_border=true&border_radius=4.8"

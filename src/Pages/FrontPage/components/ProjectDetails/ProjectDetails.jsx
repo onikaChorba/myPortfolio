@@ -5,13 +5,20 @@ import gitHub from "@/assets/img/github.png";
 
 export const ProjectDetails = ({ project }) => {
   return (
-    <section className="projectDetails">
+    <section>
       <div className="projectDetails__title title2">
         <span>{project.name}</span>
       </div>
-      <p className="title3">Project Overview</p>
-      <div className="projectDetails__list text1">{project.list}</div>
-      <div className="projectDetails__sliderTools">
+      <p className="text1 projectDetails__title title3">{project.textShort}</p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          width: "100%",
+          margin: "2%",
+        }}
+      >
+        <div className="projectDetails__list text1">{project.list}</div>
         <div className="projectDetailsButton">
           <div className="projectDetails__tools">
             <p className="title3">Languages and Tools :</p>
@@ -53,6 +60,8 @@ export const ProjectDetails = ({ project }) => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="projectDetails__sliderTools">
         <div className="projectDetails__slider">{project.imgSlider}</div>
       </div>
     </section>

@@ -19,15 +19,15 @@
   }
 }
 .projectDetails {
-  &__sliderTools {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  padding: 2rem;
+  &__title {
+    text-align: center;
+    padding: 0;
   }
   &__slider {
     box-shadow: 10px 7px 23px -3px rgba(128, 0, 0, 1);
     border: 2px solid #800000;
-    width: 48%;
+    width: 40%;
     margin: 5% auto;
   }
 }
@@ -35,4 +35,5 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
 }

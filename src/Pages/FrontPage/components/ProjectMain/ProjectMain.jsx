@@ -10,7 +10,10 @@ export const ProjectMain = ({ project }) => {
     setIsShowDetails((current) => !current);
   };
   return (
-    <section className="projectMain project">
+    <section
+      className="project"
+      style={isShowDetails ? { width: "100%" } : { width: "30%" }}
+    >
       {isShowDetails ? (
         <div className="projectDetails">
           <ProjectDetails project={project} />
@@ -20,29 +23,19 @@ export const ProjectMain = ({ project }) => {
           </button>
         </div>
       ) : (
-        <div className="projectBlocks">
-          <div className="projectBlock">
-            <div style={{ background: "black" }}>
-              <img
-                className="projectBlock__img"
-                alt={project.name}
-                src={project.imgMain}
-              />
-            </div>
-            <div className="projectBlock__info project">
-              <p className="project__title title2">{project.name}</p>
-              <div className="project__text text1">{project.textShort}</div>
-              <div className="project__tools">{project.textButton}</div>
-            </div>
+        <div className="projectBlock">
+          <div style={{ background: "black" }}>
+            <img
+              className="projectBlock__img"
+              alt={project.name}
+              src={project.imgMain}
+            />
           </div>
-          <div className="projectBlockInfo">
-            <div className="projectBlockInfo__title title2">
-              <span>{project.name}</span>
-            </div>
-            <div className="projectBlockInfo__text text1">
-              {project.textShort}
-            </div>
-            <div className="projectBlockInfo__text text">{project.text}</div>
+          <div className="projectBlock__info">
+            <p className="project__title title2">{project.name}</p>
+            <div className="project__text text1">{project.textShort}</div>
+            <div className="project__tools">{project.textButton}</div>
+            <div className="project__text text">{project.text}</div>
             <button className="projectButton" onClick={handleClickShowDetails}>
               <p className="text1"> More info </p>
               <img src={arrow} alt="arrow" className="arrow" />
