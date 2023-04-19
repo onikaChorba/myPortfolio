@@ -30,6 +30,7 @@ import imgSliderP3 from "@/assets/img/imgSliderP3.png";
 import imgTestAPI1 from "@/assets/img/testAPI1.png";
 import imgTestAPI2 from "@/assets/img/testAPI2.png";
 import imgTestAPI3 from "@/assets/img/testAPI3.png";
+import imgDasboard from "@/assets/img/dashboardTest.png";
 const project1 = [
   { text: "React" },
   { text: "TypeScript" },
@@ -53,6 +54,40 @@ const project4 = [
 ];
 export const data = {
   dataProject: [
+    {
+      id: "8",
+      name: "Dashboard | test task",
+      imgMain: imgDasboard,
+      textShort: "Sites Built With ReactJS",
+      textButton: (
+        <div className="project__tools">
+          {Object.keys(project3).map((obj, index) => (
+            <Button text={project3[obj].text} key={index}></Button>
+          ))}
+        </div>
+      ),
+      text: "This project was created as a test task to demonstrate the ability to create a page layout according to a Figma template in a React environment. It utilizes React Router for page navigation, uses map and filter to sort and display data, and uses useState to create multiple pages and allow for switching between them.",
+      gitLink: "https://github.com/onikaChorba/dashboardTestSite",
+      browserLink: "https://onikachorba.github.io/dashboardTestSite/",
+      imgSlider: (
+        <Splide>
+          <SplideSlide>
+            <img src={imgDasboard} alt="img" />
+          </SplideSlide>
+        </Splide>
+      ),
+      list: (
+        <ul className="text textLists">
+          <li className="textList">
+            This project was created as a test task to demonstrate the ability
+            to create a page layout according to a Figma template in a React
+            environment. It utilizes React Router for page navigation, uses map
+            and filter to sort and display data, and uses useState to create
+            multiple pages and allow for switching between them.
+          </li>
+        </ul>
+      ),
+    },
     {
       id: "7",
       name: "testAPI",

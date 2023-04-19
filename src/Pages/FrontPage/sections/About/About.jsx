@@ -20,6 +20,16 @@ export const About = () => {
     { src: react, alt: "react" },
     { src: figma, alt: "figma" },
   ];
+
+  // const  componentDidMount =() =>{
+  //     // виконуємо запит до серверу або інші побічні ефекти
+  //     fetch('https://example.com/data')
+  //       .then(response => response.json())
+  //       .then(data => {
+  //         // оновлюємо стан зі сприйнятими даними
+  //         this.setState({ data });
+  //       });
+  //   }
   return (
     <section className="about">
       <h2 className="about__title title2">About me</h2>
