@@ -6,7 +6,6 @@ export const Header = () => {
     { text: "Home", to: "Home" },
     { text: "About Me", to: "About" },
     { text: "Projects", to: "Projects" },
-    { text: "Resume", to: "Resume" },
     { text: "Contact", to: "Contact" },
   ];
   return (

@@ -1,35 +1,33 @@
 import "./About.scss";
-import html from "@/assets/img/html.png";
-import css from "@/assets/img/css.png";
-import js from "@/assets/img/js.png";
-import scss from "@/assets/img/scsslogo.png";
-import gitHub from "@/assets/img/github.png";
-import wb from "@/assets/img/wb.png";
-import ts from "@/assets/img/ts.png";
-import react from "@/assets/img/react.png";
-import figma from "@/assets/img/figma.png";
+const images = {
+  html: require("@/assets/img/html.png"),
+  css: require("@/assets/img/css.png"),
+  js: require("@/assets/img/js.png"),
+  scss: require("@/assets/img/scsslogo.png"),
+  gitHub: require("@/assets/img/github.png"),
+  wb: require("@/assets/img/wb.png"),
+  ts: require("@/assets/img/ts.png"),
+  react: require("@/assets/img/react.png"),
+  figma: require("@/assets/img/figma.png"),
+  vue: require("@/assets/img/vue.png"),
+  api: require("@/assets/img/api.png"),
+  redux: require("@/assets/img/redux.png"),
+};
 export const About = () => {
   const icon = [
-    { src: html, alt: "html" },
-    { src: css, alt: "css" },
-    { src: js, alt: "js" },
-    { src: scss, alt: "scss" },
-    { src: gitHub, alt: "gitHub" },
-    { src: wb, alt: "webpack" },
-    { src: ts, alt: "ts" },
-    { src: react, alt: "react" },
-    { src: figma, alt: "figma" },
+    { src: images.vue, alt: "vue" },
+    { src: images.react, alt: "react" },
+    { src: images.redux, alt: "redux" },
+    { src: images.api, alt: "api" },
+    { src: images.ts, alt: "ts" },
+    { src: images.js, alt: "js" },
+    { src: images.html, alt: "html" },
+    { src: images.css, alt: "css" },
+    { src: images.scss, alt: "scss" },
+    { src: images.gitHub, alt: "gitHub" },
+    { src: images.wb, alt: "webpack" },
+    { src: images.figma, alt: "figma" },
   ];
-
-  // const  componentDidMount =() =>{
-  //     // виконуємо запит до серверу або інші побічні ефекти
-  //     fetch('https://example.com/data')
-  //       .then(response => response.json())
-  //       .then(data => {
-  //         // оновлюємо стан зі сприйнятими даними
-  //         this.setState({ data });
-  //       });
-  //   }
   return (
     <section className="about">
       <h2 className="about__title title2">About me</h2>
@@ -49,11 +47,13 @@ export const About = () => {
         <img
           src="https://github-readme-stats.vercel.app/api/top-langs/?username=onikaChorba&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact"
           alt="status"
-          style={{ paddingBottom: "2rem", paddingTop: "2rem" }}
+          className="statusSkill"
         />
-        {icon.map((el, index) => (
-          <img src={el.src} alt={el.alt} className="iconSkills" key={index} />
-        ))}
+        <div>
+          {icon.map((el, index) => (
+            <img src={el.src} alt={el.alt} className="iconSkills" key={index} />
+          ))}
+        </div>
       </div>
 
       <h2 className="about__title title2">
@@ -63,6 +63,7 @@ export const About = () => {
         <img
           src="http://github-readme-streak-stats.herokuapp.com?user=onikaChorba&theme=dark&hide_border=true&border_radius=4.8"
           alt="status"
+          className="status"
         />
       </a>
     </section>
