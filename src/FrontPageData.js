@@ -31,6 +31,10 @@ import imgTestAPI1 from "@/assets/img/testAPI1.png";
 import imgTestAPI2 from "@/assets/img/testAPI2.png";
 import imgTestAPI3 from "@/assets/img/testAPI3.png";
 import imgDasboard from "@/assets/img/dashboardTest.png";
+import imgIQ1 from "@/assets/img/iq1.png";
+import imgIQ2 from "@/assets/img/iq2.png";
+import imgIQ3 from "@/assets/img/iq3.png";
+import imgIQ4 from "@/assets/img/iq4.png";
 const project1 = [
   { text: "React" },
   { text: "TypeScript" },
@@ -52,8 +56,71 @@ const project4 = [
   { text: "Saas" },
   { text: "API" },
 ];
+const project5 = [
+  { text: "Vue" },
+  { text: "TypeScript" },
+  { text: "javaScript" },
+  { text: "CSS" },
+];
 export const data = {
   dataProject: [
+    {
+      id: "9",
+      name: "Vue IQ | Test Website",
+      imgMain: imgIQ1,
+      textShort: "Sites Built With Vue.js",
+      textButton: (
+        <div className="project__tools">
+          {Object.keys(project5).map((obj, index) => (
+            <Button text={project5[obj].text} key={index}></Button>
+          ))}
+        </div>
+      ),
+      text: "This website is a Vue-based application that includes a homepage, a test page, and a form with questions to determine the IQ level.",
+      gitLink: "https://github.com/onikaChorba/vueTestIq",
+      browserLink: "https://vue-test-iq.vercel.app",
+      imgSlider: (
+        <Splide>
+          <SplideSlide>
+            <img src={imgIQ1} alt="img" />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={imgIQ2} alt="img" />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={imgIQ3} alt="img" />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={imgIQ4} alt="img" />
+          </SplideSlide>
+        </Splide>
+      ),
+      list: (
+        <ul className="text textLists">
+          <li className="textList">
+            The website includes three main pages:
+            <br />
+            <b className="text1">Homepage</b> <br />
+            The homepage includes general information about the IQ test and a
+            button to start the test. <br />
+            <b className="text1">About</b> <br />
+            The test information page has detailed information about the IQ
+            test.
+            <br />
+            <b className="text1">Test Page </b>
+            <br />
+            The test page includes a set of questions to determine the IQ level.
+            The questions are presented one at a time, and the user must select
+            an answer before proceeding to the next question.
+            <br /> <b className="text1">Results Page </b>
+            <br />
+            The results page displays the IQ level based on the user's answers
+            to the questions. The page also includes a timer that counts down
+            from 10 minutes.
+          </li>
+        </ul>
+      ),
+    },
     {
       id: "8",
       name: "Dashboard | test task",
