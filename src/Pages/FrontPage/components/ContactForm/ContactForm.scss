@@ -1,16 +1,18 @@
 @import "@/index.scss";
 .form {
+  width: 50%;
+  margin: 0 auto;
   box-shadow: 10px 7px 23px -3px rgba(128, 0, 0, 1);
   border: 2px solid #800000;
-  padding: 5%;
+  padding: 2rem;
   &__label {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   &__input {
     border: 1px solid #800000;
     background: black;
-    padding: 3%;
+    padding: 1rem;
   }
 }
 .textarea {
@@ -18,10 +20,10 @@
   width: 100%;
 }
 .buttonForm {
-  margin-top: 5%;
+  margin-top: 2rem;
   background: #800000;
   border-radius: 10px;
-  padding: 1% 1.5%;
+  padding: 1rem 1.5rem;
   width: 50%;
   display: flex;
   justify-content: center;

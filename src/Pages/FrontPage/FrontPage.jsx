@@ -3,7 +3,6 @@ import { About } from "./sections/About/About";
 import { Contact } from "./sections/Contact/Contact";
 import { Home } from "./sections/Home/Home";
 import { Projects } from "./sections/Projects/Projects";
-import { Resume } from "./sections/Resume/Resume";
 
 export const FrontPage = () => {
   return (
@@ -19,9 +18,6 @@ export const FrontPage = () => {
       </div>
       <div id="Projects">
         <Projects />
-      </div>
-      <div id="Resume">
-        <Resume />
       </div>
       <div id="Contact" className="text">
         <Contact />

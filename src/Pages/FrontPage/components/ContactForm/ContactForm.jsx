@@ -24,7 +24,7 @@ export const ContactForm = () => {
           type="text"
           id="name"
           name="user_name"
-          className="form__input text1"
+          className="form__input"
           placeholder="Enter Your Name"
         />
       </div>
@@ -36,7 +36,7 @@ export const ContactForm = () => {
           type="email"
           id="email"
           name="user_email"
-          className="form__input text1"
+          className="form__input"
           placeholder="Enter Your Email"
         />
       </div>
