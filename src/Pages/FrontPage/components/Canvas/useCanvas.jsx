@@ -125,7 +125,6 @@ const useCanvas = () => {
       reDrawBackground();
       drawLines();
       reDrawCircles();
-
       requestAnimationFrame(loop);
     };
     const animate = () => {
