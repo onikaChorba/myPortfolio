@@ -98,21 +98,28 @@ export const data = {
       list: (
         <ul className="text textLists">
           <li className="textList">
-            The website includes three main pages:
-            <br />
+            The website includes three main pages: homepage, about, test page
+            and results page.
+          </li>
+          <li className="textList">
             <b className="text1">Homepage</b> <br />
             The homepage includes general information about the IQ test and a
             button to start the test. <br />
+          </li>
+          <li className="textList">
             <b className="text1">About</b> <br />
             The test information page has detailed information about the IQ
             test.
-            <br />
+          </li>
+          <li className="textList">
             <b className="text1">Test Page </b>
             <br />
             The test page includes a set of questions to determine the IQ level.
             The questions are presented one at a time, and the user must select
             an answer before proceeding to the next question.
-            <br /> <b className="text1">Results Page </b>
+          </li>
+          <li className="textList">
+            <b className="text1">Results Page </b>
             <br />
             The results page displays the IQ level based on the user's answers
             to the questions. The page also includes a timer that counts down

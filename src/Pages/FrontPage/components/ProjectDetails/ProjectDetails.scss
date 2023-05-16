@@ -19,6 +19,17 @@
   }
 }
 .projectDetails {
+  &__tools {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  &__links {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  &__list {
+    width: 100%;
+  }
   padding: 2rem;
   &__title {
     text-align: center;
@@ -27,13 +38,14 @@
   &__slider {
     box-shadow: 10px 7px 23px -3px rgba(128, 0, 0, 1);
     border: 2px solid #800000;
-    width: 40%;
-    margin: 5% auto;
+    width: 70%;
+    margin: auto;
+  }
+  &__sliderTools {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 .projectDetailsButton {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
+  margin-left: 5%;
 }
