@@ -6,7 +6,7 @@ export const Home = () => {
     <section className="home">
       <div className="homeAnimation">
         <Canvas />
-        <div className="homeInfo">
+        <div>
           <HomeInfo />
         </div>
       </div>

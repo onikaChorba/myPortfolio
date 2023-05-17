@@ -49,7 +49,7 @@ export const About = () => {
           alt="status"
           className="statusSkill"
         />
-        <div>
+        <div className="iconsSkills">
           {icon.map((el, index) => (
             <img src={el.src} alt={el.alt} className="iconSkills" key={index} />
           ))}

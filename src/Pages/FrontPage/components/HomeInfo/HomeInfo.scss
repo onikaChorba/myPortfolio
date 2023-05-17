@@ -21,6 +21,18 @@
     text-align: center;
     text-transform: uppercase;
     @include font-size(700, 44px, 50px);
+    position: relative;
+    display: inline-block;
+  }
+  &__span {
+    display: inline-block;
+    cursor: pointer;
+    transition: 2s;
+    color: grey;
+    &:hover {
+      letter-spacing: 10px;
+      color: #880000;
+    }
   }
   &__text {
     text-align: center;
