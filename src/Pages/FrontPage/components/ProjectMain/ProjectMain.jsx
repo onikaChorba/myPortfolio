@@ -10,10 +10,7 @@ export const ProjectMain = ({ project }) => {
     setIsShowDetails((current) => !current);
   };
   return (
-    <section
-      className="project"
-      style={isShowDetails ? { width: "100%" } : { width: "30%" }}
-    >
+    <div className={`project ${isShowDetails ? "full-width" : "small-width"}`}>
       {isShowDetails ? (
         <div className="projectDetails">
           <ProjectDetails project={project} />
@@ -33,7 +30,12 @@ export const ProjectMain = ({ project }) => {
           </div>
           <div className="projectBlock__info">
             <p className="project__title title2">{project.name}</p>
-            <div className="project__text text1">{project.textShort}</div>
+            <div
+              className="project__text text1"
+              style={{ paddingBottom: "1rem" }}
+            >
+              {project.textShort}
+            </div>
             <div className="project__tools">{project.textButton}</div>
             <div className="project__text text">{project.text}</div>
             <button className="projectButton" onClick={handleClickShowDetails}>
@@ -43,6 +45,6 @@ export const ProjectMain = ({ project }) => {
           </div>
         </div>
       )}
-    </section>
+    </div>
   );
 };

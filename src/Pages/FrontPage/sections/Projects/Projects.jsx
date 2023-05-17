@@ -1,3 +1,4 @@
+import "../../components/ProjectMain/ProjectMain.scss";
 import { ProjectMain } from "../../components/ProjectMain/ProjectMain";
 import { data } from "@/FrontPageData";
 export const Projects = () => {
@@ -9,14 +10,7 @@ export const Projects = () => {
         examining these projects, you can gain a better understanding of my
         skills and approach to web development.
       </p>
-      <div
-        style={{
-          paddingTop: "3%",
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-        }}
-      >
+      <div className="projectsBlock">
         {data.dataProject.map((project, index) => (
           <ProjectMain project={project} key={index} />
         ))}

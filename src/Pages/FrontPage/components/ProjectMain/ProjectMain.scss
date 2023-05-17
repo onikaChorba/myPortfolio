@@ -1,20 +1,29 @@
 @import "@/index.scss";
+@import "../../../../theme/media.scss";
+.projectsBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+.full-width {
+  width: 100%;
+}
+.small-width {
+  width: 350px;
+  @include screen-tb {
+    width: 500px;
+  }
+}
 .project {
   cursor: pointer;
   box-shadow: 10px 7px 23px -3px rgba(128, 0, 0, 1);
   border: 2px solid #800000;
-  width: 100%;
   transform: translateY(0%);
   margin: auto;
   margin: 1%;
   margin-bottom: 5%;
   overflow: hidden;
-  @include screen-lp {
-    width: 45%;
-  }
-  @include screen-md {
-    width: 33%;
-  }
   &__titleBlock {
     display: flex;
     justify-content: space-between;
@@ -27,7 +36,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    padding: 2% 1%;
   }
   &__text {
     padding: 2% 3%;
@@ -59,6 +67,9 @@
     z-index: 1000;
     background: black;
     transform: translateY(80%);
+    @include screen-tb {
+      transform: translateY(75%);
+    }
     transition: all 0.5s ease;
     &:hover {
       transform: translateY(0%);
