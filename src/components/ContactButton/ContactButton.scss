@@ -1,12 +1,15 @@
 .contactButton {
   display: flex;
   flex-direction: column;
-  // width: 20%;
   background: grey;
   &__icon {
     margin: 0 auto;
     width: 60px;
     padding: 10px;
     background: grey;
+    transition-duration: 2s;
+    &:hover {
+      background: white;
+    }
   }
 }

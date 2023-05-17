@@ -9,13 +9,14 @@ export const ProjectMain = ({ project }) => {
   const handleClickShowDetails = () => {
     setIsShowDetails((current) => !current);
   };
+
   return (
     <div className={`project ${isShowDetails ? "full-width" : "small-width"}`}>
       {isShowDetails ? (
         <div className="projectDetails">
           <ProjectDetails project={project} />
           <button className="projectButton" onClick={handleClickShowDetails}>
-            <p className="text1"> Less info </p>
+            <p className="text1 projectButton__text"> Less info </p>
             <img src={arrow} alt="arrow" className="arrow" />
           </button>
         </div>
@@ -39,7 +40,7 @@ export const ProjectMain = ({ project }) => {
             <div className="project__tools">{project.textButton}</div>
             <div className="project__text text">{project.text}</div>
             <button className="projectButton" onClick={handleClickShowDetails}>
-              <p className="text1"> More info </p>
+              <p className="text1 projectButton__text"> More info </p>
               <img src={arrow} alt="arrow" className="arrow" />
             </button>
           </div>

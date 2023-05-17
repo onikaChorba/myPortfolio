@@ -30,9 +30,11 @@
     }
   }
 }
+
 .logo {
   display: flex;
   align-items: center;
+  animation: logoAnimation 1s ease-in-out;
   @include screen-tb {
     justify-content: center;
   }
@@ -49,9 +51,26 @@
   }
   &__text2 {
     color: grey;
+    transition-duration: 1s;
+    &:hover {
+      cursor: pointer;
+      color: #800000;
+      letter-spacing: 5px;
+    }
+  }
+}
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .headerNavs {
+  animation: logoAnimation 1s ease-in-out;
   width: 100%;
   @include screen-tb {
     width: 100%;
@@ -64,6 +83,7 @@
   cursor: pointer;
   margin-left: 3%;
   @include font-size(700, 20px, 24px);
+  transition-duration: 1s;
   &:hover {
     color: #800000;
   }
