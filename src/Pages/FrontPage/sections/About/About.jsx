@@ -28,6 +28,7 @@ export const About = () => {
     { src: images.wb, alt: "webpack" },
     { src: images.figma, alt: "figma" },
   ];
+
   return (
     <section className="about">
       <h2 className="about__title title2">About me</h2>
@@ -51,7 +52,13 @@ export const About = () => {
         />
         <div className="iconsSkills">
           {icon.map((el, index) => (
-            <img src={el.src} alt={el.alt} className="iconSkills" key={index} />
+            <img
+              src={el.src}
+              alt={el.alt}
+              className="iconSkills"
+              key={index}
+              title={el.alt}
+            />
           ))}
         </div>
       </div>
