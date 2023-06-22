@@ -102,7 +102,7 @@ const useCanvas = () => {
           length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
           if (length < properties.lineLength) {
             opacity = 1 - length / properties.lineLength;
-            ctx.lineWindth = "0.3";
+            ctx.lineWidth = "3";
             ctx.strokeStyle = "rgb(77, 0, 0, " + opacity + ")";
             ctx.beginPath();
             ctx.moveTo(x1, y1);
