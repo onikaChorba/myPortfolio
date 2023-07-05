@@ -36,6 +36,8 @@ import imgIQ2 from "@/assets/img/iq2.png";
 import imgIQ3 from "@/assets/img/iq3.png";
 import imgIQ4 from "@/assets/img/iq4.png";
 import imgNoteIOS from "@/assets/img/noteIOSimg1.png";
+import deliveryimg1 from "@/assets/img/deliveryimg1.png";
+import deliveryimg2 from "@/assets/img/deliveryimg2.png";
 const project1 = [
   { text: "React" },
   { text: "TypeScript" },
@@ -63,69 +65,98 @@ const project5 = [
   { text: "javaScript" },
   { text: "CSS" },
 ];
+const project6 = [
+  { text: "React" },
+  { text: "Redux" },
+  { text: "javaScript" },
+  { text: "Saas" },
+];
 export const data = {
   dataProject: [
     {
       id: "11",
-      name: "noteMacIOS | test task",
-      imgMain: imgNoteIOS,
+      name: "Delivery",
+      imgMain: deliveryimg1,
       textShort: "Sites Built With ReactJS",
       textButton: (
         <div className="project__tools">
-          {Object.keys(project1).map((obj, index) => (
-            <Button text={project1[obj].text} key={index}></Button>
+          {Object.keys(project6).map((obj, index) => (
+            <Button text={project6[obj].text} key={index}></Button>
           ))}
         </div>
       ),
-      text: "The Note Taking App is a simple web application that allows you to create, manage, and organize your notes. It provides a user-friendly interface where you can create new notes, edit existing notes, and categorize them according to your preferences.",
-      gitLink: "https://github.com/onikaChorba/noteMacIOS",
-      browserLink: "https://onikachorba.github.io/noteMacIOS/",
+      text: "This shopping website is designed to provide a seamless and enjoyable shopping experience. It allows you to explore different stores, browse their products, add items to your cart, modify quantities, and calculate the total cost of your purchases. The website leverages React for building interactive user interfaces, Redux for state management, and SCSS for flexible styling.",
+      gitLink: "https://github.com/onikaChorba/delivery",
+      browserLink: "https://onikachorba.github.io/delivery/",
       imgSlider: (
         <Splide>
           <SplideSlide>
-            <img src={imgNoteIOS} alt="img" />
+            <img src={deliveryimg1} alt="img" />
+          </SplideSlide>
+          <SplideSlide>
+            <img src={deliveryimg2} alt="img" />
           </SplideSlide>
         </Splide>
       ),
       list: (
         <ul className="text textLists">
           <li className="textList">
-            The Note Taking App is a simple web application that allows you to
-            create, manage, and organize your notes. It provides a user-friendly
-            interface where you can create new notes, edit existing notes, and
-            categorize them according to your preferences.
+            This shopping website is designed to provide a seamless and
+            enjoyable shopping experience. It allows you to explore different
+            stores, browse their products, add items to your cart, modify
+            quantities, and calculate the total cost of your purchases. The
+            website leverages React for building interactive user interfaces,
+            Redux for state management, and SCSS for flexible styling.
           </li>
           <li className="textList">
-            <b className="text1">Features</b> <br />
-            Create new notes with a title and content. Edit and update existing
-            notes. Delete notes that are no longer needed. Categorize notes into
-            different categories. Search for notes by title. Automatically save
-            notes locally to persist data.
+            <b className="text1">Store Selection</b> <br />
+            On the homepage, you will find a selection of various stores. By
+            clicking on a store, you can access its collection of products.
             <br />
           </li>
           <li className="textList">
-            <b className="text1">Technologies Used</b> <br />
-            React: A JavaScript library for building user interfaces. React
-            Router: A library for routing in React applications. React Markdown:
-            A component for rendering Markdown content. UUID: A package for
-            generating unique IDs. HTML5: The markup language for building the
-            web application structure. SCSS: The styling language for creating
-            beautiful user interfaces.
+            <b className="text1">Product Display</b> <br />
+            Once you select a store, the website dynamically retrieves and
+            displays the available products. Each product card showcases
+            essential details such as the name, price, and image of the product.
           </li>
           <li className="textList">
-            <b className="text1"> Usage</b>
+            <b className="text1"> Add to Cart</b>
             <br />
-            To create a new note, click on the "+" button in the sidebar. Enter
-            a title and content for the note, then press Enter or click outside
-            the input field to save the note. To edit a note, click on the note
-            in the sidebar. The note will appear in the workspace where you can
-            update its title and content. To delete a note, click on the "x"
-            button next to the note in the sidebar. To categorize a note, enter
-            a category name in the sidebar's category input field and press
-            Enter. The category will be added to the list of categories. To
-            search for a note by title, enter a search query in the search input
-            field. The notes in the sidebar will be filtered based on the
-            matching titles.
+            To add a product to your cart, simply click the "Add to Cart" button
+            on the product card. The selected item will be added to your
+            shopping cart.
+          </li>
+          <li className="textList">
+            <b className="text1"> Quantity Modification</b>
+            <br />
+            In the shopping cart, you have the flexibility to modify the
+            quantity of each product. Using the "+" and "-" buttons, you can
+            increase or decrease the quantity of an item. The total cost of the
+            product is automatically updated based on these changes.
+          </li>
+          <li className="textList">
+            <b className="text1"> Total Cost Calculation</b>
+            <br />
+            The website calculates the total cost of all the products in your
+            cart. As you modify the quantities, the total cost is dynamically
+            recalculated, providing you with an up-to-date view of your
+            purchases.
+          </li>
+          <li className="textList">
+            <b className="text1"> Redux Integration</b>
+            <br />
+            To manage the state of the application, Redux is employed. Redux
+            actions are used to fetch product data from an API and store it in
+            the Redux store. The cart items and their quantities are also stored
+            in Redux, enabling seamless management and updates.
+          </li>
+          <li className="textList">
+            <b className="text1"> SCSS Styling</b>
+            <br />
+            The website's visual appearance is enhanced using SCSS. SCSS
+            provides a powerful and flexible styling approach, allowing for easy
+            customization and maintenance of the website's design.
           </li>
         </ul>
       ),
