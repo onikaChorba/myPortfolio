@@ -5,19 +5,22 @@ const useCanvas = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-    // width and height - parent div
-    canvas.style.width = "100%";
-    canvas.style.height = "100%";
+    const resizeCanvas = () => {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    };
 
-    // fact size
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;
+    const handleResize = () => {
+      resizeCanvas();
+    };
 
-    // get access canvas-flame
+    window.addEventListener("resize", handleResize);
+
     const ctx = canvas.getContext("2d");
 
-    // constants for circle
     const circles = [];
 
     const properties = {
@@ -31,6 +34,7 @@ const useCanvas = () => {
       lineLength: 150,
       circlesLife: 18,
     };
+
     class Circles {
       constructor() {
         this.x = Math.random() * canvas.width;
@@ -85,6 +89,7 @@ const useCanvas = () => {
         this.circlesLife--;
       }
     }
+
     const reDrawBackground = () => {
       ctx.fillStyle = properties.bg;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -121,20 +126,30 @@ const useCanvas = () => {
         circles[i].position();
       }
     };
+
     const loop = () => {
       reDrawBackground();
       drawLines();
       reDrawCircles();
       requestAnimationFrame(loop);
     };
+
     const animate = () => {
       for (let i = 0; i < properties.maxCircle; i++) {
         circles.push(new Circles());
       }
       loop();
     };
+
+    resizeCanvas();
     animate();
-  });
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return canvasRef;
 };
+
 export default useCanvas;
