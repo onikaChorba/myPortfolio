@@ -3,8 +3,7 @@
 }
 .buttonLink {
   background: rgb(34, 3, 5);
-  padding: 15px;
-  height: 66px;
+  padding: 10px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -15,7 +14,7 @@
   }
   &__icon {
     margin-left: 10px;
-    width: 40px;
+    width: 30px;
   }
 }
 .projectDetails {
@@ -111,4 +110,6 @@
 }
 .projectDetailsButton {
   margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
 }

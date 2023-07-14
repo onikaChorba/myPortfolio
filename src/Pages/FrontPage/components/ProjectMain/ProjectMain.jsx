@@ -16,19 +16,17 @@ export const ProjectMain = ({ project }) => {
         <div className="projectDetails">
           <ProjectDetails project={project} />
           <button className="projectButton" onClick={handleClickShowDetails}>
+            <img src={arrow} alt="arrow" className="arrowLess" />
             <p className="text1 projectButton__text"> Less info </p>
-            <img src={arrow} alt="arrow" className="arrow" />
           </button>
         </div>
       ) : (
         <div className="projectBlock">
-          <div style={{ background: "black" }}>
-            <img
-              className="projectBlock__img"
-              alt={project.name}
-              src={project.imgMain}
-            />
-          </div>
+          <img
+            className="projectBlock__img"
+            alt={project.name}
+            src={project.imgMain}
+          />
           <div className="projectBlock__info">
             <p className="project__title title2">{project.name}</p>
             <div
@@ -37,8 +35,7 @@ export const ProjectMain = ({ project }) => {
             >
               {project.textShort}
             </div>
-            <div className="project__tools">{project.textButton}</div>
-            <div className="project__text text">{project.text}</div>
+            <div>{project.textButton}</div>
             <button className="projectButton" onClick={handleClickShowDetails}>
               <p className="text1 projectButton__text"> More info </p>
               <img src={arrow} alt="arrow" className="arrow" />
