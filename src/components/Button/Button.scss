@@ -1,15 +1,20 @@
 .button {
-  margin-right: 20px;
+  margin-right: 10px;
   margin-bottom: 10px;
-  padding: 0.5% 2%;
   width: auto;
   background: grey;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-duration: 1s;
   &__text {
     color: white;
     margin: 15px;
+  }
+
+  &:hover {
+    background: lightgrey;
+    cursor: pointer;
   }
 }

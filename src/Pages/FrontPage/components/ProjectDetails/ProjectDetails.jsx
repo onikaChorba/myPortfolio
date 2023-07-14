@@ -10,7 +10,12 @@ export const ProjectDetails = ({ project }) => {
         <span>{project.name}</span>
       </div>
       <p className="text1 projectDetails__title title3">{project.textShort}</p>
+
       <div className="projectDetailsButton">
+        <div className="projectDetails__tools">
+          <p className="title3">Languages and Tools :</p>
+          <div style={{ marginLeft: "-100px" }}>{project.textButton}</div>
+        </div>
         <div className="projectDetails__links">
           <p className="title3"> See life</p>
           <div className="buttonLinkBlock">
@@ -41,10 +46,6 @@ export const ProjectDetails = ({ project }) => {
               </div>
             </a>
           </div>
-        </div>
-        <div className="projectDetails__tools">
-          <p className="title3">Languages and Tools :</p>
-          {project.textButton}
         </div>
       </div>
       <div className="projectDetails__list text1">{project.list}</div>
