@@ -26,6 +26,10 @@ a {
 span {
   color: #800000;
 }
+.strong {
+  @include font-size(700, 20px, 28px);
+  color: #cccc;
+}
 .contactButtonBlock {
   position: fixed;
   top: 35%;

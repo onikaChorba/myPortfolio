@@ -10,7 +10,7 @@ export const Contact = () => {
         my skills and experience, please do not hesitate to contact me by
         submitting the form below. You can also
         <a
-          href="https://drive.google.com/file/d/1xnVWmJFnBgO6lXUVQVBbB64-AoNnvXP9/view?usp=sharing"
+          href="https://drive.google.com/file/d/1kbBJHpm9OVrRh8W-LP6N_bNY2pbkSQMf/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
