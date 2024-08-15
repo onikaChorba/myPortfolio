@@ -12,20 +12,36 @@ const images = {
   vue: require("@/assets/img/vue.png"),
   api: require("@/assets/img/api.png"),
   redux: require("@/assets/img/redux.png"),
+  next: require("@/assets/img/nextjs-icon.png"),
+  "styled components": require("@/assets/img/Styled Components.png"),
+  mui: require("@/assets/img/mui.png"),
+  wing: require("@/assets/img/wing.png"),
+  gitLab: require("@/assets/img/gitlab.png"),
 };
+
 export const About = () => {
   const icon = [
-    { src: images.vue, alt: "vue" },
-    { src: images.react, alt: "react" },
-    { src: images.redux, alt: "redux" },
-    { src: images.api, alt: "api" },
     { src: images.ts, alt: "ts" },
     { src: images.js, alt: "js" },
+
+    { src: images.react, alt: "react" },
+    { src: images.redux, alt: "redux" },
+    { src: images.next, alt: "next" },
+    { src: images.vue, alt: "vue" },
+
     { src: images.html, alt: "html" },
     { src: images.css, alt: "css" },
     { src: images.scss, alt: "scss" },
+    { src: images["styled components"], alt: "styled components" },
+    { src: images.mui, alt: "mui" },
+    { src: images.wing, alt: "wing" },
+
+    { src: images.api, alt: "api" },
+
     { src: images.gitHub, alt: "gitHub" },
+    { src: images.gitLab, alt: "gitLab" },
     { src: images.wb, alt: "webpack" },
+
     { src: images.figma, alt: "figma" },
   ];
 
@@ -42,6 +58,31 @@ export const About = () => {
         I am passionate about my work and am constantly seeking opportunities to
         expand my knowledge and skills to create better, more dynamic web
         applications.
+      </p>
+      <h2 className="about__title title3">My journey</h2>
+      <p className="strong">Frontend Layout Developer @ Pixel24 AG</p>
+      <p className="text">July 2023 - Present</p>
+      <br />
+      <p className="text about__text">
+        {" "}
+        Developing and maintaining front-end code with TypeScript, JavaScript,
+        React, HTML, and CSS. I specialize in advanced CSS techniques using
+        Sass, Styled-components, Tailwind, and Material-UI to create dynamic and
+        reusable components. My work focuses on delivering exceptional user
+        experiences across various devices, utilizing advanced technologies to
+        enhance both performance and flexibility.
+      </p>
+      <br /> <br /> <br />
+      <p className="strong">Frontend Developer @ Self-employed</p>
+      <p className="text">September 2021 - July 2023</p>
+      <br />
+      <p className="text about__text">
+        {" "}
+        As a self-starter, I dove into various projects, mastering Next.js,
+        Vue.js, React, HTML, and CSS. By integrating APIs and Redux, I brought
+        data to life with seamless interactions. I’ve styled my creations with
+        advanced CSS techniques and deployed them on platforms like Vercel and
+        GitHub Pages for blazing-fast performance.
       </p>
       <h2 className="about__title title2">My skills</h2>
       <div className="about__icon">
@@ -62,7 +103,6 @@ export const About = () => {
           ))}
         </div>
       </div>
-
       <h2 className="about__title title2">
         My stats on <span>GitHub</span>
       </h2>
