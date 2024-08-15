@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.10a4a168.css",
-    "main.js": "./static/js/main.f3a2fbf8.js",
+    "main.css": "./static/css/main.24da4b10.css",
+    "main.js": "./static/js/main.1063f0fd.js",
     "static/js/787.128fc6e9.chunk.js": "./static/js/787.128fc6e9.chunk.js",
     "static/media/SliderN1.png": "./static/media/SliderN1.d129daea71b53d69db0c.png",
     "static/media/testAPI2.png": "./static/media/testAPI2.436cce2391b8825be45c.png",
@@ -36,10 +36,13 @@
     "static/media/img1.jpeg": "./static/media/img1.64e8b62530df90110899.jpeg",
     "static/media/imgSliderP2.png": "./static/media/imgSliderP2.701e344d591c6af4f9a3.png",
     "static/media/SliderC2.png": "./static/media/SliderC2.988c2dd7d586e6502144.png",
+    "static/media/gitlab.png": "./static/media/gitlab.b406bffc6aca80c25dd3.png",
     "static/media/imgSliderP1.png": "./static/media/imgSliderP1.cb094aa645f100aefc3e.png",
     "static/media/dashboardTest.png": "./static/media/dashboardTest.6559c4fe3ed5295cc7a6.png",
     "static/media/SliderComun4.png": "./static/media/SliderComun4.fe705ac729725168e580.png",
+    "static/media/wing.png": "./static/media/wing.3549d9e451d7abb96934.png",
     "static/media/imgSliderP3.png": "./static/media/imgSliderP3.ac0a42c481c69f80b812.png",
+    "static/media/Styled Components.png": "./static/media/Styled Components.126f4224f6e125476bca.png",
     "static/media/noteIOSimg1.png": "./static/media/noteIOSimg1.61a36b3fbe1cd86bc38c.png",
     "static/media/wb.png": "./static/media/wb.47692505d122dbcae490.png",
     "static/media/vue.png": "./static/media/vue.4626039760cedf966189.png",
@@ -49,6 +52,7 @@
     "static/media/api.png": "./static/media/api.4a069290a52b80dfe356.png",
     "static/media/github.png": "./static/media/github.553c66159c5672f25df6.png",
     "static/media/arrow.png": "./static/media/arrow.c3ab7412d87bfd47e830.png",
+    "static/media/nextjs-icon.png": "./static/media/nextjs-icon.80bf1edc048bbe2aad61.png",
     "static/media/css.png": "./static/media/css.ac6e2d3afb0e0fb836c2.png",
     "static/media/figma.png": "./static/media/figma.72fbc535ebe253a5dbc4.png",
     "static/media/html.png": "./static/media/html.cfb2ba4a6b1c3de295bc.png",
@@ -57,12 +61,12 @@
     "static/media/js.png": "./static/media/js.3dfb665e058d08c99f28.png",
     "static/media/scsslogo.png": "./static/media/scsslogo.6b0d9d2b3b1e3a64f8b0.png",
     "index.html": "./index.html",
-    "main.10a4a168.css.map": "./static/css/main.10a4a168.css.map",
-    "main.f3a2fbf8.js.map": "./static/js/main.f3a2fbf8.js.map",
+    "main.24da4b10.css.map": "./static/css/main.24da4b10.css.map",
+    "main.1063f0fd.js.map": "./static/js/main.1063f0fd.js.map",
     "787.128fc6e9.chunk.js.map": "./static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10a4a168.css",
-    "static/js/main.f3a2fbf8.js"
+    "static/css/main.24da4b10.css",
+    "static/js/main.1063f0fd.js"
   ]
 }
